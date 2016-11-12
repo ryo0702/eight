@@ -1,0 +1,12 @@
+.list {
+  li {
+    &.separate {
+      height:1px;
+      width:100%;
+      display: block;
+      background-color:rgba(#000,0.1);
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+  }
+}

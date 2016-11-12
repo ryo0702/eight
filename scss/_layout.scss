@@ -1,0 +1,110 @@
+// Container
+.container {
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  @include box-sizing(border-box);
+  $mqsizing:mqSizing("md");
+  @media screen and (max-width:$mqsizing) {
+    width:100%;
+    padding:0 20px;
+  }
+}
+
+.container-fluid {
+  width:100%;
+  @include box-sizing(border-box);
+  padding:0 10px;
+  $mqsizing:mqSizing("md");
+  @media screen and (max-width:$mqsizing) {
+    padding:0 20px;
+  }
+}
+
+.container-narrow {
+  width:40%;
+  margin-left:auto;
+  margin-right:auto;
+  @include box-sizing(border-box);
+  $mqsizing:mqSizing("md");
+  @media screen and (max-width:$mqsizing) {
+    width:80%;
+    padding:0 20px;
+  }
+}
+
+.clearfix,.cf{@include clearfix;}
+
+
+// Layout
+.layout_sidebar_contents {
+  @include display-flex();
+  @include flex-direction(row);
+  @include flex-wrap(nowrap);
+  & > .sidebar {
+    @include order(0);
+    width:20%;
+    padding-right:30px;
+    @include box-sizing(border-box);
+  }
+  & > .contents {
+    @include order(1);
+    width:80%;
+    @include box-sizing(border-box);
+  }
+}
+
+
+// Flexbox
+.fb {
+  @include display-flex();
+  @include flex-direction(row);
+}
+
+.fb-column {
+  @include flex-direction(column);
+}
+
+.fb-center-all {
+  @include display-flex();
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+// Grids
+.grids {
+  @include display-flex();
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  $mqsizing:mqSizing("md");
+  @media screen and (max-width:$mqsizing) {
+    display: block;
+  }
+  .grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6,.grid-7,.grid-8,.grid-9,.grid-10,.grid-11,.grid-12 {
+    display:block;
+    @include box-sizing(border-box);
+    padding-left:15px;
+    padding-right:15px;
+    $mqsizing:mqSizing("md");
+    @media screen and (max-width:$mqsizing) {
+      width:100%!important;
+      margin-bottom:20px;
+    }
+  }
+  @for $i from 1 through 12 {
+    .grid-#{$i} {
+      width:#{$i * 8.333333333333333%};
+    }
+  }
+  &.grids-nogutter {
+    & > .grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6,.grid-7,.grid-8,.grid-9,.grid-10,.grid-11,.grid-12 {
+      padding-left:0px;
+      padding-right:0px;
+    }
+  }
+}
+
+@for $i from 0 through 20 {
+  .fb-order-#{$i} {@include order(#{$i});}
+}

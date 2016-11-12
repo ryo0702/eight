@@ -1,0 +1,67 @@
+h1 {
+  font-size:45px;
+}
+h2 {
+  font-size:35px;
+}
+h3 {
+  font-size:25px;
+}
+h4 {
+  font-size:20px;
+}
+h5 {
+  font-size:15px;
+}
+h6 {
+  font-size:13px;
+}
+
+.tac {text-align: center;}
+
+.title {
+  font-size:35px;
+  font-weight: bold;
+}
+.lead {
+  font-size:17px;
+}
+
+.textshadow{
+  @include text-shadow(0 1px 1px rgba(#000,0.1));
+}
+.textshadow-metalic {
+  @include text-shadow(0 1px 0 rgba(#FFF,1),0 2px 0 rgba(#000,1),0 3px 3px rgba(#000,0.5), -1px 0 rgba(#000,0.3));
+}
+
+
+.titleset-shortline {
+  & > .title {
+    &:after {
+      display: block;
+      margin:30px auto 30px auto;
+      content:"";
+      width:80px;
+      height:1px;
+      background-color:rgba(#000,0.35);
+    }
+  }
+  & > .lead {}
+
+  &.titleset-shortline-center {
+    & > .title {&:after {margin:30px auto 30px auto;}}
+  }
+  &.titleset-shortline-left {
+    & > .title {&:after {margin:30px 0 30px 0;}}
+  }
+  &.titleset-shortline-right {
+    & > .title {&:after {margin:30px 0 30px 0;}}
+  }
+
+  &.titleset-shortline-white {
+    & > .title {&:after {background-color:#FFF;}}
+  }
+  &.titleset-shortline-black {
+    & > .title {&:after {background-color:#000;}}
+  }
+}

@@ -1,0 +1,18 @@
+// MediaQuery Sizing
+@function mqSizing($sizing) {
+	@if $sizing == "xl" {
+		@return 75em;
+	}
+	@else if $sizing == "lg" {
+		@return 62em;
+	}
+	@else if $sizing == "md" {
+		@return 48em;
+	}
+ @else if $sizing == "sm" {
+ 	@return 34em;
+ }
+ @else if $sizing == "xs" {
+ 	@return 33em;
+ }
+}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import "compass";
+/*!
+* Eight v0.0.1
+* License: The MIT License
+* License URI: https://opensource.org/licenses/mit-license.php
+*/
+
+$color_body_font:#5e5e5e;
+$color_body_link:#37373c;
+$color_body_link_hover:#6b6b79;
+
+$color_navbar_font:#3b3b3b;
+$color_navbar_font_hover:#8e8e8e;
+$color_navbar_bg:#fefefe;
+$color_navbar_shadow:#ececec;
+
+//Navigation
+$navbar_height:80px;
+
+
+// Google Web font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import "scss/mixin";
+.webfont {
+  font-family:'Open Sans', sans-serif;
+}
+
+@import "scss/normalize";
+@import "scss/layout";
+@import "scss/navbar";
+@import "scss/footer";
+@import "scss/billboard";
+@import "scss/text";
+@import "scss/button";
+@import "scss/archive";
+@import "scss/list";
+@import "scss/contents";
+@import "scss/atta";
+
+
+@import "scss/color/basic";

@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import "compass";
+
+.example {
+  border:solid 5px #dfdfdf;
+  width:100%;
+  max-height:500px;
+  padding:10px;
+  @include box-sizing(border-box);
+  overflow-y:scroll;
+}

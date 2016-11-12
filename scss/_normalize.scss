@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+* {
+  word-wrap:break-word;
+}
+
+body {
+  font-family:"游ゴシック", "YuGothic-Medium","YuGo-Medium",'-apple-system','Helvetica Neue','Hiragino Kaku Gothic ProN','メイリオ',"meiryo",sans-serif;
+  padding:0;
+  margin:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 100%;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,dl,p {
+  margin:0;
+  padding:0;
+}
+ul,ol,dl,li,dt,dd {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  @include transition(all 0.5s ease 0s);
+  &:hover {
+  }
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+header,main,aside,section,article,p {
+  padding:0;
+  margin:0;
+}
+
+button,.btn {
+  display: inline-block;
+  background-color:inherit;
+  border:0;
+  @include box-sizing(border-box);
+  cursor: pointer;
+  &:active {outline:none;}
+  &:focus {outline:none;}
+}
+
+pre {
+  padding:20px;
+  margin:0;
+  display: block;
+  font-size:12px;
+  width:100%;
+  max-height:800px;
+  @include box-sizing(border-box);
+  overflow-y:scroll;
+  background-color:#4b4b4b;
+  color:#ececec;
+  & > code {
+    display: block;
+    line-height: 200%;
+    letter-spacing: 0.07em;
+  }
+}
