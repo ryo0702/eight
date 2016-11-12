@@ -46,9 +46,11 @@
 
 <script type="text/javascript">
 var route = '../';
-ui_set(route);
+html_construction(route);
+
 $(document).ready(function(){
   $('.localizer').essence_translation();
+  replace_url(route);
 });
 </script>
 </body>

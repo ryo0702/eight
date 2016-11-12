@@ -4,53 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Eight - Responsive CSS Framework</title>
+  <title>Get started - Eight</title>
   <link rel="shortcut icon" href="../img/favicon_256.ico" />
   <link rel="icon" type="image/vnd.microsoft.icon" href="../img/favicon_16.ico" />
   <link rel="stylesheet" href="../eight.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../original.css" media="screen" title="eight">
   <link rel="stylesheet" href="../inc/font-awesome/css/font-awesome.css" media="screen" title="eight">
   <script src="../inc/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="../js/eight.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../js/essence_localizer.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.essence-translation.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/functions.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-
-<header class="navbar boxshadow">
-  <div class="container">
-    <h1><a href="../document.html" class="webfont">Eight</a></h1>
-    <button type="button" id="navbar-toggle" class="toggle"><i class="fa fa-bars" aria-hidden="true"></i><span>Menu</span></button>
-    <nav>
-      <ul>
-        <li class="nav-item">
-          <a href="getstarted.html" class="webfont localizer" data-localizer="navbar > getstart">Get Started</a>
-        </li>
-        <li class="nav-item">
-          <a href="index.html" class="webfont localizer" data-localizer="navbar > documentation">Documentation</a>
-        </li>
-        <li class="nav-item">
-          <a href="../themes.html" class="webfont localizer" data-localizer="navbar > themes">Themes</a>
-        </li>
-        <li class="nav-item">
-          <a href="../about_essence.html" class="webfont localizer" data-localizer="navbar > about_essence">About Essence</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+<header id="navbar" class="navbar boxshadow"></header>
 <main class="pad-top-60px pad-bottom-60px layout_sidebar_contents container">
 
+  <!-- Contents -->
   <article class="contents">
     <header>
-      <h1 class="localizer" data-localizer="page > contents > title">Get started</h1>
+      <h1 class="localizer" data-lng-ja="スタート">Get started</h1>
+      <p class="localizer lead" data-lng-ja="Eightはダウンロードして読み込むだけで、パワフルに働き始めます。<br />企業向けサイト、ブログ、ランディングページ...など、素早く目的のサイトを作ることができます。">Just download and read Eight and it will start working powerfully.<br />You can quickly create the site of interest, such as corporate site, blog, landing page ... etc.</p>
     </header>
     <section>
-      <h2 class="localizer" data-localizer="page > contents > how_do_i_get_started > title">How do I get started?</h2>
-      <p class="localizer" data-localizer="page > contents > how_do_i_get_started > lead">Download the Eight.<br />Please expand the downloaded file.</p>
+      <h2 class="localizer" data-lng-ja="どうやって始めるの？">How do I get started?</h2>
+      <p class="localizer" data-lng-ja="Eightをダウンロードして下さい。<br />ダウンロードしたファイルを展開して下さい。">Download the Eight.<br />Please expand the downloaded file.</p>
     </section>
     <section>
-      <h2 class="localizer" data-localizer="page > contents > link > title">Link</h2>
-      <p class="localizer" data-localizer="page > contents > link > lead">Load Eight on your web site.<br />In order to use Eight,jQuery and Font Awesome are required.</p>
+      <h2 class="localizer" data-lng-ja="リンク">Link</h2>
+      <p class="localizer" data-lng-ja="Eightをサイトに読み込みます。<br />Eightを読み込むと同時に必ず、jQueryとFont Awesomeを読み込んで下さい。">Load Eight on your web site.<br />In order to use Eight,jQuery and Font Awesome are required.</p>
       <pre><code><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -60,98 +41,19 @@
 <script src="eight.js" type="text/javascript" charset="utf-8"></script></code></pre>
     </section>
   </article>
-  <div class="sidebar">
-    <ul class="list">
-      <li><a href="getstarted.html" class="localizer" data-localizer="sidebar > get_start">Get start</a></li>
-      <li><a href="layout.html" class="localizer" data-localizer="sidebar > layout">Layout</a></li>
-      <li class="separate"></li>
-      <li><a href="gridsystem.html" class="localizer" data-localizer="sidebar > gridsystem">Grid System</a></li>
-      <li><a href="contents.html" class="localizer" data-localizer="sidebar > contents">Contents</a></li>
-      <li><a href="typography.html" class="localizer" data-localizer="sidebar > typography">Typography</a></li>
-      <li><a href="form.html" class="localizer" data-localizer="sidebar > form">Form</a></li>
-      <li><a href="button.html" class="localizer" data-localizer="sidebar > button">Button</a></li>
-      <li><a href="card.html" class="localizer" data-localizer="sidebar > card">Card</a></li>
-      <li><a href="billboard.html" class="localizer" data-localizer="sidebar > billboard">Billboard</a></li>
-      <li><a href="list.html" class="localizer" data-localizer="sidebar > list">List</a></li>
-      <li class="separate"></li>
-      <li><a href="plugin.html" class="localizer" data-localizer="sidebar > plugin">Plugin</a></li>
-    </ul>
-  </div>
+  <!-- Contents End -->
+
+<div id="sidebar" class="sidebar"></div>
 </main>
-
-<footer class="footer">
-</footer>
-
+<footer id="footer" class="footer"></footer>
 
 <script type="text/javascript">
+var route = '../';
+html_construction(route);
+
 $(document).ready(function(){
-  var lang_data_common = {
-    "navbar > getstart":{
-      "ja":"スタート"
-    },
-    "navbar > documentation":{
-      "ja":"ドキュメント"
-    },
-    "navbar > themes":{
-      "ja":"テーマ"
-    },
-    "navbar > about_essence":{
-      "ja":"Essenceについて"
-    },
-    "sidebar > get_start":{
-      "ja":"スタートガイド"
-    },
-    "sidebar > layout":{
-      "ja":"レイアウト"
-    },
-    "sidebar > gridsystem":{
-      "ja":"グリッドシステム"
-    },
-    "sidebar > contents":{
-      "ja":"コンテンツ"
-    },
-    "sidebar > typography":{
-      "ja":"文字"
-    },
-    "sidebar > form":{
-      "ja":"フォーム"
-    },
-    "sidebar > button":{
-      "ja":"ボタン"
-    },
-    "sidebar > card":{
-      "ja":"カード"
-    },
-    "sidebar > billboard":{
-      "ja":"ビルボード"
-    },
-    "sidebar > list":{
-      "ja":"リスト"
-    },
-    "sidebar > plugin":{
-      "ja":"プラグイン"
-    }
-  }
-  var lang_data_page = {
-    "page > contents > title":{
-      "ja":"スタートガイド"
-    },
-    "page > contents > how_do_i_get_started > title":{
-      "ja":"どうやって使うの？"
-    },
-    "page > contents > how_do_i_get_started > lead":{
-      "ja":"Eightをダウンロードします。<br />ダウンロードしたファイルを解凍して下さい。"
-    },
-    "page > contents > link > title":{
-      "ja":"リンク"
-    },
-    "page > contents > link > lead":{
-      "ja":"Eightをアナタのサイトに読み込みます。<br />Eightを使うためには、jQueryとFont Awesomeが必要になります。"
-    }
-  }
-  var lang_lib = $.extend({},lang_data_common,lang_data_page);
-  var lang = essence_check_language();
-  essence_localizer(lang,lang_lib);
+  $('.localizer').essence_translation();
+  replace_url(route);
 });
 </script>
 </body>
