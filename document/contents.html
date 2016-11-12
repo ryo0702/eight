@@ -13,6 +13,84 @@
   <script src="../inc/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="../js/eight.js" type="text/javascript" charset="utf-8"></script>
   <script src="../js/essence_localizer.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/functions.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<header id="navbar" class="navbar boxshadow"></header>
+<main class="pad-top-60px pad-bottom-60px layout_sidebar_contents container">
+
+
+  <!-- Contents -->
+  <article class="contents">
+    <header>
+      <h1 class="localizer" data-localizer="page > contents > title">Container</h1>
+      <p class="localizer lead" data-localizer="page > contents > lead">Eight offers various Container Classes.<br />Using multiple responsive containers, you can lay the foundation for a high degree of freedom layout.</p>
+    </header>
+    <section>
+      <h2 class="localizer" data-localizer="page > contents > container > title">Container</h2>
+      <p class="localizer" data-localizer="page > contents > container > lead">Container classes with different widths such as container, container-fluid, container-narrow are prepared.</p>
+      <div class="example">
+        <div class="container" style="background-color:#ebdfdf;margin-bottom:5px;">container</div>
+        <div class="container-fluid" style="background-color:#ebdfdf;margin-bottom:5px;">container-fluid</div>
+        <div class="container-narrow" style="background-color:#ebdfdf;">container-narrow</div>
+      </div>
+      <pre class="mar-bottom-20px"><code><div class="container">container</div>
+<div class="container-fluid">container-fluid</div>
+<div class="container-narrow">container-narrow</div></code></pre>
+    </section>
+  </article>
+  <!-- Contents End -->
+
+
+<div id="sidebar" class="sidebar"></div>
+</main>
+<footer id="footer" class="footer"></footer>
+
+<script type="text/javascript">
+var route = '../';
+ui_set(route);
+$(document).ready(function(){
+  var lang_data_page = {
+    "page > contents > title":{
+      "ja":"コンテンツ"
+    },
+    "page > contents > lead":{
+      "ja":"Contents Classを使うと、豊かな文章表現ができるようになります。<br />設定はとても簡単です。コンテンツとして表示したい要素にcontentsを設定するだけです。"
+    },
+    "page > contents > contents > title":{
+      "ja":"Contents"
+    },
+    "page > contents > contents > lead":{
+      "ja":"設定すると文字間、文字のサイズなどがコンテンツ用の設定になります。<br />「b」「strong」「em」などのHTMLタグに対応しており、その他にも様々なClassを用意しています。"
+    }
+  }
+  var lang_lib = $.extend({},lang_data_common,lang_data_page);
+  var lang = essence_check_language();
+  essence_localizer(lang,lang_lib,null);
+});
+</script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Contents - Eight</title>
+  <link rel="shortcut icon" href="../img/favicon_256.ico" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="../img/favicon_16.ico" />
+  <link rel="stylesheet" href="../eight.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../original.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../inc/font-awesome/css/font-awesome.css" media="screen" title="eight">
+  <script src="../inc/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/eight.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/ui_data.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/essence_localizer.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 
@@ -109,76 +187,7 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-  var lang_data_common = {
-    "navbar > getstart":{
-      "ja":"スタート"
-    },
-    "navbar > documentation":{
-      "ja":"ドキュメント"
-    },
-    "navbar > themes":{
-      "ja":"テーマ"
-    },
-    "navbar > about_essence":{
-      "ja":"Essenceについて"
-    },
-    "sidebar > get_start":{
-      "ja":"スタートガイド"
-    },
-    "sidebar > layout":{
-      "ja":"レイアウト"
-    },
-    "sidebar > container":{
-      "ja":"コンテナ"
-    },
-    "sidebar > container":{
-      "ja":"コンテナ"
-    },
-    "sidebar > gridsystem":{
-      "ja":"グリッドシステム"
-    },
-    "sidebar > contents":{
-      "ja":"コンテンツ"
-    },
-    "sidebar > typography":{
-      "ja":"文字"
-    },
-    "sidebar > form":{
-      "ja":"フォーム"
-    },
-    "sidebar > button":{
-      "ja":"ボタン"
-    },
-    "sidebar > card":{
-      "ja":"カード"
-    },
-    "sidebar > billboard":{
-      "ja":"ビルボード"
-    },
-    "sidebar > list":{
-      "ja":"リスト"
-    },
-    "sidebar > other":{
-      "ja":"その他"
-    },
-    "sidebar > plugin":{
-      "ja":"プラグイン"
-    }
-  }
-  var lang_data_page = {
-    "page > contents > title":{
-      "ja":"コンテンツ"
-    },
-    "page > contents > lead":{
-      "ja":"Contents Classを使うと、豊かな文章表現ができるようになります。<br />設定はとても簡単です。コンテンツとして表示したい要素にcontentsを設定するだけです。"
-    },
-    "page > contents > contents > title":{
-      "ja":"Contents"
-    },
-    "page > contents > contents > lead":{
-      "ja":"設定すると文字間、文字のサイズなどがコンテンツ用の設定になります。<br />「b」「strong」「em」などのHTMLタグに対応しており、その他にも様々なClassを用意しています。"
-    }
-  }
+
   var lang_lib = $.extend({},lang_data_common,lang_data_page);
   var lang = essence_check_language();
   essence_localizer(lang,lang_lib);
