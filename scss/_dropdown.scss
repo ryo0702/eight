@@ -1,0 +1,22 @@
+.dropdown-menu {
+  position:relative;
+  z-index:300;
+  & > ul {
+    display: none;
+    padding:10px;
+    margin:0;
+    height:auto;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:$color_body_bgc;
+    border:solid 1px darken($color_body_bgc,20%);
+    @include border-radius(3px);
+    z-index:300;
+    & > li {
+      line-height:100%;
+      min-width:150px;
+      width:auto;
+    }
+  }
+}

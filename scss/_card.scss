@@ -1,0 +1,11 @@
+.card {
+  display: block;
+
+  & > .inner {
+    padding:15px;
+  }
+
+  &.card-border {
+    border:solid darken($color_body_bgc,10%) 1px;
+  }
+}

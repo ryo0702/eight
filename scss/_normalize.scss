@@ -65,3 +65,13 @@ pre {
     letter-spacing: 0.07em;
   }
 }
+
+span.code {
+  display: inline;
+  padding:5px 10px;
+  font-size:13px;
+  background-color:#4b4b4b;
+  color:#ececec;
+  margin:0 5px;
+  @include border-radius(3px);
+}

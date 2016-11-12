@@ -1,5 +1,5 @@
 .list {
-  li {
+  & > li,dd {
     &.separate {
       height:1px;
       width:100%;
@@ -7,6 +7,19 @@
       background-color:rgba(#000,0.1);
       margin-top:10px;
       margin-bottom:10px;
+    }
+  }
+
+  &.list-menu {
+    dt,dd,li {
+      & > a {
+        display: block;
+        padding:5px;
+        &:hover,&:active,&.active {
+          background-color:darken($color_body_bgc,10%);
+          @include border-radius(3px);
+        }
+      }
     }
   }
 }

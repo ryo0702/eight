@@ -52,6 +52,20 @@
     width:80%;
     @include box-sizing(border-box);
   }
+  $mqsizing:mqSizing("md");
+  @media screen and (max-width:$mqsizing) {
+    @include display-flex();
+    @include flex-direction(column);
+    & > .sidebar {
+      @include order(1);
+      width:100%;
+      padding-right:0;
+    }
+    & > .contents {
+      @include order(0);
+      width:100%;
+    }
+  }
 }
 
 

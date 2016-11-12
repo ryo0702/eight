@@ -23,39 +23,61 @@
   <article class="contents">
     <header>
       <h1 class="localizer" data-lng-ja="コンテンツ">Contents</h1>
-      <p class="localizer lead" data-lng-ja="Contents Classを使うと、豊かな文章表現ができるようになります。<br />設定はとても簡単です。コンテンツとして表示したい要素にcontentsを設定するだけです。">Using Contents Class makes it possible to express rich sentences.<br />Setting is very easy. Just set Contents to the element you want to display as content.</p>
+      <p class="localizer lead" data-lng-ja="<span class='code'>.contents</span>を使うと、豊かな文章表現ができるようになります。<br />設定はとても簡単です。コンテンツとして表示したい要素に<span class='code'>.contents</span>を設定するだけです。<br />この機能は<span class='code'>.contents</span>内で適応されます。">Using <span class='code'>.contents</span> makes it possible to express rich sentences.<br />Setting is very easy.<br />Just set Contents to the element you want to display as content.<br />This function is applied within <span class="code">.contents</span>.</p>
     </header>
     <section>
       <h2 class="localizer" data-lng-ja="Contents">Contents</h2>
-      <p class="localizer" data-lng-ja="設定すると文字間、文字のサイズなどがコンテンツ用の設定になります。<br />「b」「strong」「em」などのHTMLタグに対応しており、その他にも様々なClassを用意しています。">When set, characters, character sizes, etc. will be set for the content.</p>
+      <p class="localizer" data-lng-ja="設定すると文字間、文字のサイズなどがコンテンツ用の設定になります。<br /><span class='code'>b</span><span class='code'>strong</span><span class='code'>em</span>などのHTMLタグに対応しており、その他にも様々なClassを用意しています。">It supports HTML tags such as <span class='code'>b</span><span class='code'>strong</span><span class='code'>em</span>, and various other classes are prepared.</p>
       <div class="example">
         <article class="contents">
           <header>
             <h1>Title</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="dates"><span class="date">2016.07.02</span><span class="author">Ryo Inagaki</span></p>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
           </header>
           <section>
             <h2>Lorem ipsum dolor sit amet</h2>
-            <p><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
             <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit <strong>amet</strong>, <em>consectetur</em> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <small>reprehenderit</small> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+              <b>b</b>, <strong>strong</strong>, <em>em</em>,<small>small</small>...
+            </p>
             <blockquote>
               <p>
-                blockquote text.Lorem ipsum dolor sit amet.
+                blockquote text.Lorem ipsum dolor sit amet...
               </p>
             </blockquote>
           </section>
           <section>
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>2nd section</h2>
+            <p>Lorem ipsum dolor sit amet...</p>
           </section>
         </article>
       </div>
-      <pre class="mar-bottom-20px"><code><div class="container">container</div>
-<div class="container-fluid">container-fluid</div>
-<div class="container-narrow">container-narrow</div></code></pre>
+<pre class="mar-bottom-20px"><code><article class="contents">
+  <header>
+    <h1>Title</h1>
+    <p class="dates"><span class="date">2016.07.02</span><span class="author">Ryo Inagaki</span></p>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+  </header>
+  <section>
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+    <h3>Lorem ipsum dolor sit amet</h3>
+    <p>
+      <b>b</b>, <strong>strong</strong>, <em>em</em>,<small>small</small>...
+    </p>
+    <blockquote>
+      <p>
+        blockquote text.Lorem ipsum dolor sit amet...
+      </p>
+    </blockquote>
+  </section>
+  <section>
+    <h2>2nd section</h2>
+    <p>Lorem ipsum dolor sit amet...</p>
+  </section>
+</article></code></pre>
     </section>
   </article>
   <!-- Contents End -->
@@ -71,6 +93,7 @@ html_construction(route);
 $(document).ready(function(){
   $('.localizer').essence_translation();
   replace_url(route);
+  codes();
 });
 </script>
 </body>
