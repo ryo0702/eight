@@ -52,13 +52,39 @@
     width:80%;
     @include box-sizing(border-box);
   }
+  $mqsizing:mqSizing("md");
+  @media screen and (max-width:$mqsizing) {
+    @include display-flex();
+    @include flex-direction(column);
+    & > .sidebar {
+      @include order(1);
+      width:100%;
+      padding-right:0;
+    }
+    & > .contents {
+      @include order(0);
+      width:100%;
+    }
+  }
 }
 
+
+// Centering
+.box-center {
+  margin-left:auto;
+  margin-right:auto;
+}
+.tac {
+  text-align: center;
+}
 
 // Flexbox
 .fb {
   @include display-flex();
   @include flex-direction(row);
+  @for $i from 0 through 20 {
+    & > .fb-order-#{$i} {@include order(#{$i});}
+  }
 }
 
 .fb-column {
@@ -103,8 +129,4 @@
       padding-right:0px;
     }
   }
-}
-
-@for $i from 0 through 20 {
-  .fb-order-#{$i} {@include order(#{$i});}
 }

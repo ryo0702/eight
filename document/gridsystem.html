@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Eight - Responsive CSS Framework</title>
+  <title class="localizer" data-lng-ja="グリッドシステム - Eight">Grid system - Eight</title>
   <link rel="shortcut icon" href="../img/favicon_256.ico" />
   <link rel="icon" type="image/vnd.microsoft.icon" href="../img/favicon_16.ico" />
   <link rel="stylesheet" href="../eight.css" media="screen" title="eight">
@@ -12,45 +12,23 @@
   <link rel="stylesheet" href="../inc/font-awesome/css/font-awesome.css" media="screen" title="eight">
   <script src="../inc/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="../js/eight.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../js/essence_localizer.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.essence-translation.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/functions.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-
-<header class="navbar boxshadow">
-  <div class="container">
-    <h1><a href="../document.html" class="webfont">Eight</a></h1>
-    <button type="button" id="navbar-toggle" class="toggle"><i class="fa fa-bars" aria-hidden="true"></i><span>Menu</span></button>
-    <nav>
-      <ul>
-        <li class="nav-item">
-          <a href="getstarted.html" class="webfont localizer" data-localizer="navbar > getstart">Get Started</a>
-        </li>
-        <li class="nav-item">
-          <a href="index.html" class="webfont localizer" data-localizer="navbar > documentation">Documentation</a>
-        </li>
-        <li class="nav-item">
-          <a href="../themes.html" class="webfont localizer" data-localizer="navbar > themes">Themes</a>
-        </li>
-        <li class="nav-item">
-          <a href="../about_essence.html" class="webfont localizer" data-localizer="navbar > about_essence">About Essence</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+<header id="navbar" class="navbar boxshadow"></header>
 <main class="pad-top-60px pad-bottom-60px layout_sidebar_contents container">
 
+  <!-- Contents -->
   <article class="contents">
     <header>
-      <h1 class="localizer" data-localizer="page > contents > title">Grid system</h1>
-      <p class="localizer lead" data-localizer="page > contents > lead">Like other grid systems, Eight employs a 12 column grid system.</p>
+      <h1 class="localizer" data-lng-ja="グリッドシステム">Grid system</h1>
+      <p class="localizer lead" data-lng-ja="他のグリッドシステム同様、Eightでは12カラムのグリッドシステムを採用しています。">Like other grid systems, Eight employs a 12 column grid system.</p>
     </header>
-
     <section>
-      <h2 class="localizer" data-localizer="page > contents > grids_and_grid > title">grids and grid</h2>
-      <p class="localizer" data-localizer="page > contents > grids_and_grid > lead">When using the grid system, put grid in grids.Please read the following example.</p>
-      <p class="mar-bottom-5px localizer" data-localizer="page > contents > grids_and_grid > content1">In this way, let's add the number of grids in grids plus 12.</p>
+      <h2 class="localizer" data-lng-ja="gridsとgrid">grids and grid</h2>
+      <p class="localizer" data-lng-ja="「grids」の中に「grid」を入れて使います。<br />詳しい使い方は以下の例を見て下さい。">When using the grid system, put grid in grids.Please read the following example.</p>
+      <p class="mar-bottom-5px localizer" data-lng-ja="このように、gridsの中のgridの数字が足して12になるように入れていきます。">In this way, let's add the number of grids in grids plus 12.</p>
       <div class="example">
         <div class="grids">
           <div class="grid-4">Grid4</div>
@@ -63,8 +41,7 @@
   <div class="grid-4">Grid4</div>
   <div class="grid-4">Grid4</div>
 </div></code></pre>
-
-      <p class="localizer" data-localizer="page > contents > grids_and_grid > content2">You can also put grids in the grid.</p>
+      <p class="localizer" data-lng-ja="gridの中にgridsを入れることもできます。">You can also put grids in the grid.</p>
       <div class="example">
         <div class="grids">
           <div class="grid-8">
@@ -88,12 +65,11 @@
   <div class="grid-4">Grid4</div>
 </div></code></pre>
     </section>
-
     <section>
-      <h2 class="localizer" data-localizer="page > contents > grids_style > title">Grids style</h2>
-      <p class="localizer" data-localizer="page > contents > grids_style > lead">change the grids by setting the style of grids.</p>
+      <h2 class="localizer" data-lng-ja="グリッドスタイル">Grid style</h2>
+      <p class="localizer" data-lng-ja="gridsのスタイルを設定することによって、gridsを変化させることができます。">change the grids by setting the style of grids.</p>
       <h3>grids-nogutter</h3>
-      <p class="mar-bottom-5px localizer" data-localizer="page > contents > grids_style > content1">If you add grids-nogutter, it will be grid with no gap.</p>
+      <p class="mar-bottom-5px localizer" data-lng-ja="grids-nogutterを追記すると、隙間のないgridになります。">If you add grids-nogutter, it will be grid with no gap.</p>
       <div class="example">
         <div class="grids grids-nogutter">
           <div class="grid-4">Grid4</div>
@@ -107,124 +83,21 @@
   <div class="grid-4">Grid4</div>
 </div></code></pre>
     </section>
-
   </article>
+  <!-- Contents End -->
 
-  <div class="sidebar">
-    <ul class="list">
-      <li><a href="getstarted.html" class="localizer" data-localizer="sidebar > get_start">Get start</a></li>
-      <li><a href="layout.html" class="localizer" data-localizer="sidebar > layout">Layout</a></li>
-      <li class="separate"></li>
-      <li><a href="container.html" class="localizer" data-localizer="sidebar > container">Container</a></li>
-      <li><a href="gridsystem.html" class="localizer" data-localizer="sidebar > gridsystem">Grid System</a></li>
-      <li><a href="contents.html" class="localizer" data-localizer="sidebar > contents">Contents</a></li>
-      <li><a href="typography.html" class="localizer" data-localizer="sidebar > typography">Typography</a></li>
-      <li><a href="form.html" class="localizer" data-localizer="sidebar > form">Form</a></li>
-      <li><a href="button.html" class="localizer" data-localizer="sidebar > button">Button</a></li>
-      <li><a href="card.html" class="localizer" data-localizer="sidebar > card">Card</a></li>
-      <li><a href="billboard.html" class="localizer" data-localizer="sidebar > billboard">Billboard</a></li>
-      <li><a href="list.html" class="localizer" data-localizer="sidebar > list">List</a></li>
-      <li><a href="other.html" class="localizer" data-localizer="sidebar > other">Other</a></li>
-      <li class="separate"></li>
-      <li><a href="plugin.html" class="localizer" data-localizer="sidebar > plugin">Plugin</a></li>
-    </ul>
-  </div>
+<div id="sidebar" class="sidebar"></div>
 </main>
-
-<footer class="footer">
-</footer>
-
+<footer id="footer" class="footer"></footer>
 
 <script type="text/javascript">
+var route = '../';
+html_construction(route);
+
 $(document).ready(function(){
-  var lang_data_common = {
-    "navbar > getstart":{
-      "ja":"スタート"
-    },
-    "navbar > documentation":{
-      "ja":"ドキュメント"
-    },
-    "navbar > themes":{
-      "ja":"テーマ"
-    },
-    "navbar > about_essence":{
-      "ja":"Essenceについて"
-    },
-    "sidebar > get_start":{
-      "ja":"スタートガイド"
-    },
-    "sidebar > layout":{
-      "ja":"レイアウト"
-    },
-    "sidebar > container":{
-      "ja":"コンテナ"
-    },
-    "sidebar > container":{
-      "ja":"コンテナ"
-    },
-    "sidebar > gridsystem":{
-      "ja":"グリッドシステム"
-    },
-    "sidebar > contents":{
-      "ja":"コンテンツ"
-    },
-    "sidebar > typography":{
-      "ja":"文字"
-    },
-    "sidebar > form":{
-      "ja":"フォーム"
-    },
-    "sidebar > button":{
-      "ja":"ボタン"
-    },
-    "sidebar > card":{
-      "ja":"カード"
-    },
-    "sidebar > billboard":{
-      "ja":"ビルボード"
-    },
-    "sidebar > list":{
-      "ja":"リスト"
-    },
-    "sidebar > other":{
-      "ja":"その他"
-    },
-    "sidebar > plugin":{
-      "ja":"プラグイン"
-    }
-  }
-  var lang_data_page = {
-    "page > contents > title":{
-      "ja":"グリッドシステム"
-    },
-    "page > contents > lead":{
-      "ja":"他のグリッドシステム同様、Eightでは12カラムのグリッドシステムを採用しています。"
-    },
-    "page > contents > grids_and_grid > title":{
-      "ja":"gridsとgrid"
-    },
-    "page > contents > grids_and_grid > lead":{
-      "ja":"「grids」の中に「grid」を入れて使います。<br />詳しい使い方は以下の例を見て下さい。"
-    },
-    "page > contents > grids_and_grid > content1":{
-      "ja":"このように、gridsの中のgridの数字が足して12になるように入れていきます。"
-    },
-    "page > contents > grids_and_grid > content2":{
-      "ja":"gridの中にgridsを入れることもできます。"
-    },
-    "page > contents > grids_style > title":{
-      "ja":"グリッドスタイル"
-    },
-    "page > contents > grids_style > lead":{
-      "ja":"gridsのスタイルを設定することによって、gridsを変化させることができます。"
-    },
-    "page > contents > grids_style > content1":{
-      "ja":"grids-nogutterを追記すると、隙間のないgridになります。"
-    }
-  }
-  var lang_lib = $.extend({},lang_data_common,lang_data_page);
-  var lang = essence_check_language();
-  essence_localizer(lang,lang_lib);
+  $('.localizer').essence_translation();
+  replace_url(route);
+  codes();
 });
 </script>
 </body>

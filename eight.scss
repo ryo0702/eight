@@ -1,11 +1,12 @@
 @charset "utf-8";
 @import "compass";
 /*!
-* Eight v0.0.2
+* Eight v0.0.5
 * License: The MIT License
 * License URI: https://opensource.org/licenses/mit-license.php
 */
 
+$color_body_bg:#f9f9f9;
 $color_body_font:#5e5e5e;
 $color_body_link:#37373c;
 $color_body_link_hover:#6b6b79;
@@ -14,6 +15,52 @@ $color_navbar_font:#3b3b3b;
 $color_navbar_font_hover:#8e8e8e;
 $color_navbar_bg:#fefefe;
 $color_navbar_shadow:#ececec;
+
+$color_button_font:#7c7c7c;
+$color_button_bg:#f4f4f4;
+$color_button_bg_hover:#fbfbfb;
+$color_button_bg_active:#e0e0e0;
+
+$color_primary:(
+  font:#7c7c7c,
+  font_hover:#7c7c7c,
+  bg:#f4f4f4,
+  bg_hover:#fbfbfb,
+  bg_active:#e0e0e0,
+  darkness:"thin"
+);
+$color_success:(
+  font:#ffffff,
+  font_hover:#ffffff,
+  bg:#14e74f,
+  bg_hover:#30fb69,
+  bg_active:#11d648,
+  darkness:"dark"
+);
+$color_info:(
+  font:#ffffff,
+  font_hover:#ffffff,
+  bg:#1494e7,
+  bg_hover:#2dacff,
+  bg_active:#0f88d6,
+  darkness:"dark"
+);
+$color_warning:(
+  font:#ffffff,
+  font_hover:#ffffff,
+  bg:#e79f14,
+  bg_hover:#faae1b,
+  bg_active:#de9811,
+  darkness:"dark"
+);
+$color_danger:(
+  font:#ffffff,
+  font_hover:#ffffff,
+  bg:#e7143a,
+  bg_hover:#fa1a43,
+  bg_active:#da0f34,
+  darkness:"dark"
+);
 
 //Navigation
 $navbar_height:80px;
@@ -37,7 +84,10 @@ $navbar_height:80px;
 @import "scss/archive";
 @import "scss/list";
 @import "scss/contents";
+@import "scss/card";
 @import "scss/atta";
+@import "scss/dropdown";
+@import "scss/other";
 
 
-@import "scss/color/basic";
+@import "scss/color";

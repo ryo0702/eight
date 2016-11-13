@@ -9,3 +9,18 @@
   @include box-sizing(border-box);
   overflow-y:scroll;
 }
+
+.navbar {
+  & > .container {
+    & > h1 {
+      & > a {
+        display: inline-block;
+      }
+      & > .ver {
+        display: inline-block;
+        font-size:10px;
+        margin-left:3px;
+      }
+    }
+  }
+}

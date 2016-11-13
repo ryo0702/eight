@@ -1,13 +1,12 @@
 .navbar {
   position:fixed;
-  z-index:10;
+  z-index:51;
   top:0;
   left:0;
   width:100%;
   height:$navbar_height;
   color:$color_navbar_font;
   background-color:$color_navbar_bg;
-  @include box-shadow(0 1px 1px 0 $color_navbar_shadow);
   @include box-sizing(border-box);
   .container,.container-fluid {
     @include display-flex();
@@ -35,7 +34,6 @@
   }
   nav {
     @include box-sizing(border-box);
-    overflow-y: hidden;
     height:$navbar_height;
     & > ul {
       @include display-flex();
@@ -43,16 +41,18 @@
       @include flex-wrap(nowrap);
       & > li {
         height:$navbar_height;
-        line-height:$navbar_height;
         margin-right:20px;
         font-size:15px;
+        @include display-flex();
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include align-items(center);
         &:last-child {
           margin-right:0;
         }
         & > a {
           color:$color_navbar_font;
-          display: block;
-          height:$navbar_height;
+          display:block;
           @include transition(all 0.5s ease 0s);
           &:hover {
             color:$color_navbar_font_hover
