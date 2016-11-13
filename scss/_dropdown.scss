@@ -1,6 +1,6 @@
 .dropdown-menu {
   position:relative;
-  z-index:300;
+  cursor: pointer;
   & > ul {
     display: none;
     padding:10px;
@@ -8,15 +8,19 @@
     height:auto;
     position: absolute;
     top:0;
-    left:0;
-    background-color:$color_body_bgc;
-    border:solid 1px darken($color_body_bgc,20%);
+    left:0%;
+    background-color:$color_body_bg;
+    border:solid 1px darken($color_body_bg,20%);
     @include border-radius(3px);
-    z-index:300;
+    z-index:350;
     & > li {
       line-height:100%;
       min-width:150px;
       width:auto;
+      a {
+        display: block;
+        padding:5px;
+      }
     }
   }
 }

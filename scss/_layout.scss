@@ -69,10 +69,22 @@
 }
 
 
+// Centering
+.box-center {
+  margin-left:auto;
+  margin-right:auto;
+}
+.tac {
+  text-align: center;
+}
+
 // Flexbox
 .fb {
   @include display-flex();
   @include flex-direction(row);
+  @for $i from 0 through 20 {
+    & > .fb-order-#{$i} {@include order(#{$i});}
+  }
 }
 
 .fb-column {
@@ -117,8 +129,4 @@
       padding-right:0px;
     }
   }
-}
-
-@for $i from 0 through 20 {
-  .fb-order-#{$i} {@include order(#{$i});}
 }

@@ -1,0 +1,14 @@
+.archive {}
+
+.archive-2column {
+  @include display-flex();
+  @include flex-direction(row);
+  @include flex-wrap(nowrap);
+  $mqsizing:mqSizing("md");
+  & > .item {
+    width:50%;
+  }
+  @media screen and (max-width:$mqsizing) {
+    display: block;
+  }
+}

@@ -1,18 +1,155 @@
 .btn {
+  font-weight: bold;
+  display: inline-block;
+  line-height: 100%;
+  border:none;
+  @include box-sizing(border-box);
   @include border-radius(3px);
-  color:#000;
-  background-color:#FFF;
+  text-align: center;
   padding:12px 16px;
   font-size:16px;
   margin:0;
-  font-weight:bold;
   display: inline-block;
-  &:hover {}
-  &.btn__block {
-    display: block;
+
+  // Size
+  &.btn-block {
+    display: block!important;
+    width:100%;
   }
-  .btn-large {
+  &.btn-xsmall {
+    font-size:10px;
+    padding:5px 8px;
+  }
+  &.btn-small {
+    font-size:12px;
+    padding:10px 12px;
+  }
+  &.btn-middle {
+    font-size:16px;
+    padding:12px 16px;
+  }
+  &.btn-large {
     font-size:25px;
-    padding:10px 20px;
+    padding:14px 20px;
   }
+  &.btn-xlarge {
+    font-size:32px;
+    padding:18px 28px;
+  }
+
+  &.btn-notround {
+    @include border-radius(0px);
+  }
+
+  &.btn-skeuomorphic {
+    @include box-shadow(0 0 0 1px rgba(#000,0.2)inset,0 0 3px 1px rgba(#000,0.25)inset,0 1px 2px 0 rgba(#000,0.2));
+    @include text-shadow(0 1px 1px rgba(#FFF,0.5),0 -1px 1px rgba(#000,0.2));
+  }
+
+  &.btn-flat3d {
+    position: relative;
+    @include box-shadow(0 -6px 0 0 rgba(#000,0.25)inset);
+    padding:12px 16px 18px 16px;
+    top:0;
+    @include transition(all 0.15s ease 0s);
+    &:active,&:focus {
+      @include box-shadow(0 -1px 0 0 rgba(#000,0.05)inset);
+      padding:12px 16px;
+      top:6px;
+    }
+    &.btn-xsmall {
+      @include box-shadow(0 -2px 0 0 rgba(#000,0.25)inset);
+      padding:5px 8px 7px 8px;
+      &:active,&:focus {
+        @include box-shadow(0 -1px 0 0 rgba(#000,0.05)inset);
+        padding:5px 8px;
+        top:2px;
+      }
+    }
+    &.btn-small {
+      @include box-shadow(0 -4px 0 0 rgba(#000,0.25)inset);
+      padding:10px 12px 14px 12px;
+      &:active,&:focus {
+        @include box-shadow(0 -1px 0 0 rgba(#000,0.05)inset);
+        padding:10px 12px;
+        top:4px;
+      }
+    }
+    &.btn-large {
+      @include box-shadow(0 -6px 0 0 rgba(#000,0.25)inset);
+      padding:14px 20px 20px 20px;
+      &:active,&:focus {
+        @include box-shadow(0 -1px 0 0 rgba(#000,0.05)inset);
+        padding:14px 20px;
+        top:6px;
+      }
+    }
+    &.btn-xlarge {
+      @include box-shadow(0 -10px 0 0 rgba(#000,0.25)inset);
+      padding:18px 28px 28px 28px;
+      &:active,&:focus {
+        @include box-shadow(0 -1px 0 0 rgba(#000,0.05)inset);
+        padding:18px 28px;
+        top:10px;
+      }
+    }
+  }
+
+  &.btn-skeuomorphic {}
+
+  &,&.btn-primary {
+    color:map-get($color_primary,font);
+    background-color:map-get($color_primary,bg);
+    &:hover {
+      background-color:map-get($color_primary,bg_hover);
+    }
+    &:active,&:focus {
+      background-color:map-get($color_primary,bg_active);
+    }
+  }
+
+  &.btn-success {
+    color:map-get($color_success,font);
+    background-color:map-get($color_success,bg);
+    &:hover {
+      background-color:map-get($color_success,bg_hover);
+    }
+    &:active,&:focus {
+      background-color:map-get($color_success,bg_active);
+    }
+  }
+
+  &.btn-info {
+    color:map-get($color_info,font);
+    background-color:map-get($color_info,bg);
+    &:hover {
+      background-color:map-get($color_info,bg_hover);
+    }
+    &:active,&:focus {
+      background-color:map-get($color_info,bg_active);
+    }
+  }
+
+  &.btn-warning {
+    color:map-get($color_warning,font);
+    background-color:map-get($color_warning,bg);
+    &:hover {
+      background-color:map-get($color_warning,bg_hover);
+    }
+    &:active,&:focus {
+      background-color:map-get($color_warning,bg_active);
+    }
+  }
+
+  &.btn-danger {
+    color:map-get($color_danger,font);
+    background-color:map-get($color_danger,bg);
+    &:hover {
+      background-color:map-get($color_danger,bg_hover);
+    }
+    &:active,&:focus {
+      background-color:map-get($color_danger,bg_active);
+    }
+  }
+
 }
