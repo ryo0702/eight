@@ -4,7 +4,6 @@
       height:1px;
       width:100%;
       display: block;
-      background-color:rgba(#000,0.1);
       margin-top:10px;
       margin-bottom:10px;
     }
@@ -16,7 +15,6 @@
         display: block;
         padding:5px;
         &:hover,&:active,&.active {
-          background-color:darken($color_body_bg,10%);
           @include border-radius(3px);
         }
       }

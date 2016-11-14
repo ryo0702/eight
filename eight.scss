@@ -1,15 +1,11 @@
 @charset "utf-8";
 @import "compass";
+
 /*!
-* Eight v0.0.5
+* Eight v0.0.6
 * License: The MIT License
 * License URI: https://opensource.org/licenses/mit-license.php
 */
-
-$color_body_bg:#f9f9f9;
-$color_body_font:#5e5e5e;
-$color_body_link:#37373c;
-$color_body_link_hover:#6b6b79;
 
 $color_navbar_font:#3b3b3b;
 $color_navbar_font_hover:#8e8e8e;
@@ -21,12 +17,29 @@ $color_button_bg:#f4f4f4;
 $color_button_bg_hover:#fbfbfb;
 $color_button_bg_active:#e0e0e0;
 
+
+$color_common:(
+  font:#4f4f4f,
+  bg:#f7f7f7,
+  border:#dedede,
+);
+$color_link:(
+  font:#474747,
+  font_hover:#777777,
+  active:#555555
+);
+$color_navbar:(
+  font:#3b3b3b,
+  font_hover:#8e8e8e,
+  bg:#fefefe,
+  border:#ececec
+);
 $color_primary:(
   font:#7c7c7c,
   font_hover:#7c7c7c,
-  bg:#f4f4f4,
-  bg_hover:#fbfbfb,
-  bg_active:#e0e0e0,
+  bg:#f7f7f7,
+  bg_hover:#f9f9f9,
+  bg_active:#eeeeee,
   darkness:"thin"
 );
 $color_success:(
