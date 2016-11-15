@@ -37,18 +37,16 @@
 
 
 // Layout
-.layout_sidebar_contents {
+.layout_sidebar_contents,.layout_contents_sidebar {
   @include display-flex();
   @include flex-direction(row);
   @include flex-wrap(nowrap);
   & > .sidebar {
-    @include order(0);
     width:20%;
     padding-right:30px;
     @include box-sizing(border-box);
   }
   & > .contents {
-    @include order(1);
     width:80%;
     @include box-sizing(border-box);
   }
@@ -65,6 +63,24 @@
       @include order(0);
       width:100%;
     }
+  }
+}
+
+.layout_sidebar_contents {
+  & > .sidebar {
+    @include order(0);
+  }
+  & > .contents {
+    @include order(1);
+  }
+}
+
+.layout_contents_sidebar {
+  & > .sidebar {
+    @include order(1);
+  }
+  & > .contents {
+    @include order(0);
   }
 }
 
@@ -85,17 +101,21 @@
   @for $i from 0 through 20 {
     & > .fb-order-#{$i} {@include order(#{$i});}
   }
-}
 
-.fb-column {
-  @include flex-direction(column);
-}
+  &.fb-row {
+    @include flex-direction(row);
+  }
 
-.fb-center-all {
-  @include display-flex();
-  @include flex-direction(column);
-  @include justify-content(center);
-  @include align-items(center);
+  &.fb-column {
+    @include flex-direction(column);
+  }
+
+  &.fb-vh-center {
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+  }
 }
 
 // Grids

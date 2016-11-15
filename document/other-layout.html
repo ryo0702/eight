@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title class="localizer" data-lng-ja="その他のレイアウト - Eight">Other layout - Eight</title>
+  <link rel="shortcut icon" href="../img/favicon_256.ico" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="../img/favicon_16.ico" />
+  <link rel="stylesheet" href="../eight.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../original.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../inc/font-awesome/css/font-awesome.css" media="screen" title="eight">
+  <script src="../inc/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/eight.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.essence-translation.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/functions.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<header id="navbar" class="navbar boxshadow"></header>
+<main class="pad-top-60px pad-bottom-60px layout_sidebar_contents container">
+
+  <!-- Contents -->
+  <article class="contents">
+    <header>
+      <h1 class="localizer" data-lng-ja="その他のレイアウト">Other layout</h1>
+      <p class="localizer lead" data-lng-ja="Eightでは左サイドバー・右コンテンツといったレイアウトをすでに何種類か用意しています。">Eight already prepared several layouts such as left sidebar and right contents.</p>
+    </header>
+    <section>
+      <h2 class="localizer" data-lng-ja="セカンダリページのレイアウト">Secondary page layout</h2>
+      <p class="localizer" data-lng-ja="コンテンツを右に、サイドバーを左に配置など、よくセカンダリーページで使われるレイアウトを実装します。HTMLコードは必ずコンテンツが先に記述されるようになっています。">Implement layouts that are often used on secondary pages, such as placing content on the right and sidebar on the left.The HTML code always makes sure the content is described first.</p>
+      <div class="example">
+        <div class="layout_contents_sidebar">
+          <div class="contents">.contents</div>
+          <div class="sidebar">.sidebar</div>
+        </div>
+        <hr />
+        <div class="layout_sidebar_contents">
+          <div class="contents">.contents</div>
+          <div class="sidebar">.sidebar</div>
+        </div>
+      </div>
+<pre class="mar-bottom-20px"><code><div class="layout_contents_sidebar">
+  <div class="contents">.contents</div>
+  <div class="sidebar">.sidebar</div>
+</div>
+<hr />
+<div class="layout_sidebar_contents">
+  <div class="contents">.contents</div>
+  <div class="sidebar">.sidebar</div>
+</div></code></pre>
+    </section>
+    <section>
+      <h2 class="localizer" data-lng-ja="詳細">Detail</h2>
+      <div>
+        <table class="table table-clearly table-width-min">
+          <tbody>
+            <tr>
+              <th>.layout_contents_sidebar</th>
+              <td class="localizer" data-lng-ja="必須">Required</td>
+              <td class="localizer" data-lng-ja="コンテンツを左に、サイドバーを右に配置">Layout the content to the left and the sidebar to the right</td>
+            </tr>
+            <tr>
+              <th>.layout_sidebar_contents</th>
+              <td class="localizer" data-lng-ja="必須">Required</td>
+              <td class="localizer" data-lng-ja="コンテンツを右に、サイドバーを左に配置">Layout the content to the right and the sidebar to the left</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </article>
+  <!-- Contents End -->
+
+<div id="sidebar" class="sidebar"></div>
+</main>
+<footer id="footer" class="footer"></footer>
+
+<script type="text/javascript">
+var route = '../';
+html_construction(route);
+
+$(document).ready(function(){
+  $('.localizer').essence_translation();
+  replace_url(route);
+  codes();
+});
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 @import "compass";
 
 /*!
-* Eight v0.0.6
+* Eight v0.0.7
 * License: The MIT License
 * License URI: https://opensource.org/licenses/mit-license.php
 */
@@ -16,7 +16,6 @@ $color_button_font:#7c7c7c;
 $color_button_bg:#f4f4f4;
 $color_button_bg_hover:#fbfbfb;
 $color_button_bg_active:#e0e0e0;
-
 
 $color_common:(
   font:#4f4f4f,
@@ -34,12 +33,20 @@ $color_navbar:(
   bg:#fefefe,
   border:#ececec
 );
-$color_primary:(
-  font:#7c7c7c,
-  font_hover:#7c7c7c,
+$color_default:(
+  font:#4f4f4f,
+  font_hover:#4f4f4f,
   bg:#f7f7f7,
-  bg_hover:#f9f9f9,
-  bg_active:#eeeeee,
+  bg_hover:#ffffff,
+  bg_active:#f4f4f4,
+  darkness:"thin"
+);
+$color_primary:(
+  font:#ffffff,
+  font_hover:#ffffff,
+  bg:#1b86f5,
+  bg_hover:#3095fe,
+  bg_active:#3095fe,
   darkness:"thin"
 );
 $color_success:(
@@ -97,7 +104,9 @@ $navbar_height:80px;
 @import "scss/archive";
 @import "scss/list";
 @import "scss/contents";
+@import "scss/form";
 @import "scss/card";
+@import "scss/table";
 @import "scss/atta";
 @import "scss/dropdown";
 @import "scss/other";

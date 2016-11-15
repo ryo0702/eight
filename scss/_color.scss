@@ -14,11 +14,98 @@ a {
   }
 }
 
+hr,.separate {
+  background-color:map-get($color_common,border);
+}
+
+
+
+// Table
+table.table-clearly {
+  tr {
+  }
+}
+
+
+
+// Form
+input[type="text"],input[type="number"],input[type="email"],input[type="password"]{
+  border:solid 1px map-get($color_common,border);
+  color:map-get($color_common,font);
+  &:active,&:focus {
+    @include box-shadow(0 0 0 3px rgba(#000,0.1) inset);
+  }
+}
+select {
+  color:map-get($color_common,font);
+  border:solid 1px map-get($color_common,border);
+  option {
+    color:map-get($color_common,font);
+  }
+}
+div.inp {
+  &.vali-check-danger {
+    input[type="text"],input[type="number"],input[type="email"],input[type="password"] {
+      @include box-shadow(0 0 0 3px rgba(map-get($color_danger,bg),0.1) inset);
+    }
+    select {
+      @include box-shadow(0 0 0 3px rgba(map-get($color_danger,bg),0.1) inset);
+    }
+  }
+  &.vali-check-success {
+    input[type="text"],input[type="number"],input[type="email"],input[type="password"] {
+      @include box-shadow(0 0 0 3px rgba(map-get($color_success,bg),0.1));
+    }
+    select {
+      @include box-shadow(0 0 0 3px rgba(map-get($color_success,bg),0.1));
+    }
+  }
+}
+
+
+// Billboard
+.billboard {
+  &,&.billboard-primary {
+    color:map-get($color_primary,font);
+    background-color:map-get($color_primary,bg);
+  }
+  &.billboard-success {
+    color:map-get($color_success,font);
+    background-color:map-get($color_success,bg);
+  }
+  &.billboard-info {
+    color:map-get($color_info,font);
+    background-color:map-get($color_info,bg);
+  }
+  &.billboard-warning {
+    color:map-get($color_warning,font);
+    background-color:map-get($color_warning,bg);
+  }
+  &.billboard-danger {
+    color:map-get($color_danger,font);
+    background-color:map-get($color_danger,bg);
+  }
+}
+
 
 
 // Button
 .btn {
-  &,&.btn-primary {
+  &,&.btn-default {
+    color:map-get($color_default,font);
+    background-color:map-get($color_default,bg);
+    &:hover {
+      background-color:map-get($color_default,bg_hover);
+    }
+    &:active,&:focus {
+      background-color:map-get($color_default,bg_active);
+    }
+    &:disabled,&.disabled {
+      color:rgba(map-get($color_default,font),0.5);
+      background-color:desaturate(map-get($color_default,bg),35%);
+    }
+  }
+  &.btn-primary {
     color:map-get($color_primary,font);
     background-color:map-get($color_primary,bg);
     &:hover {
@@ -26,6 +113,10 @@ a {
     }
     &:active,&:focus {
       background-color:map-get($color_primary,bg_active);
+    }
+    &:disabled,&.disabled {
+      color:rgba(map-get($color_primary,font),0.5);
+      background-color:desaturate(map-get($color_primary,bg),35%);
     }
   }
   &.btn-success {
@@ -37,6 +128,10 @@ a {
     &:active,&:focus {
       background-color:map-get($color_success,bg_active);
     }
+    &:disabled,&.disabled {
+      color:rgba(map-get($color_success,font),0.5);
+      background-color:desaturate(map-get($color_success,bg),35%);
+    }
   }
   &.btn-info {
     color:map-get($color_info,font);
@@ -46,6 +141,10 @@ a {
     }
     &:active,&:focus {
       background-color:map-get($color_info,bg_active);
+    }
+    &:disabled,&.disabled {
+      color:rgba(map-get($color_info,font),0.5);
+      background-color:desaturate(map-get($color_info,bg),35%);
     }
   }
   &.btn-warning {
@@ -57,6 +156,10 @@ a {
     &:active,&:focus {
       background-color:map-get($color_warning,bg_active);
     }
+    &:disabled,&.disabled {
+      color:rgba(map-get($color_warning,font),0.5);
+      background-color:desaturate(map-get($color_warning,bg),35%);
+    }
   }
   &.btn-danger {
     color:map-get($color_danger,font);
@@ -66,6 +169,10 @@ a {
     }
     &:active,&:focus {
       background-color:map-get($color_danger,bg_active);
+    }
+    &:disabled,&.disabled {
+      color:rgba(map-get($color_danger,font),0.5);
+      background-color:desaturate(map-get($color_danger,bg),35%);
     }
   }
 }
@@ -93,6 +200,17 @@ a {
   }
 
   // Color
+  &.card-default {
+    color:darken(map-get($color_default,bg),6.5%);
+    background-color:lighten(map-get($color_default,bg),30%);
+    border:solid darken(map-get($color_default,bg),6.5%) 1px;
+    & > .header {border-bottom:1px solid darken(map-get($color_default,bg),6.5%);}
+    & > .inner {&.inner-border {border-top:1px solid darken(map-get($color_default,bg),6.5%);}}
+    & > .footer {border-top:1px solid darken(map-get($color_default,bg),6.5%);}
+    &.card-strong {
+      border:solid darken(map-get($color_default,bg),10%) 3px;
+    }
+  }
   &.card-primary {
     color:darken(map-get($color_primary,bg),6.5%);
     background-color:lighten(map-get($color_primary,bg),30%);
@@ -247,6 +365,7 @@ a {
   @media screen and (max-width:$mqsizing) {
     .container,.container-fluid {
       button.toggle {
+        background-color:map-get($color_navbar,bg);
         border-top:1px solid map-get($color_navbar,border);
         &:hover {
           color:map-get($color_navbar,font_hover);

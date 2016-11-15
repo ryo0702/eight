@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title class="localizer" data-lng-ja="フレックスボックス - Eight">Flexbox - Eight</title>
+  <link rel="shortcut icon" href="../img/favicon_256.ico" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="../img/favicon_16.ico" />
+  <link rel="stylesheet" href="../eight.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../original.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../inc/font-awesome/css/font-awesome.css" media="screen" title="eight">
+  <script src="../inc/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/eight.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.essence-translation.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/functions.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<header id="navbar" class="navbar boxshadow"></header>
+<main class="pad-top-60px pad-bottom-60px layout_sidebar_contents container">
+
+  <!-- Contents -->
+  <article class="contents">
+    <header>
+      <h1 class="localizer" data-lng-ja="フレックスボックス">Flexbox</h1>
+      <p class="localizer lead" data-lng-ja="EightはFlexboxでレイアウトします。">Eight layout with Flexbox.</p>
+    </header>
+    <section>
+      <h2 class="localizer" data-lng-ja="フレックスボックス">Flexbox</h2>
+      <p class="localizer" data-lng-ja="<span class='code'>.fb</span>を定義して、向きなどのオプションを設定します。<br />以下のサンプルでは<span class='code'>.fb-row</span>や<span class='code'>.fb-column</span>を使って、要素の向きを設定しています。">Define <span class='code'>.fb</span> and set options such as direction.<br />In the following example, we set the orientation of the element using <span class='code'>.fb-row</span> or <span class='code'>.fb-column</span>.</p>
+      <div class="example">
+        <div class="fb fb-row">
+          <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+          <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+          <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+        </div>
+        <hr />
+        <div class="fb fb-column">
+          <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+          <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+          <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+        </div>
+      </div>
+<pre class="mar-bottom-20px"><code><div class="fb fb-row">
+  <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+  <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+  <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+</div>
+<hr />
+<div class="fb fb-column">
+  <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+  <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+  <div class="tac" style="margin:5px;background-color:#d5d5d5;padding:5px;">item</div>
+</div></code></pre>
+    </section>
+    <section>
+      <h2 class="localizer" data-lng-ja="詳細">Detail</h2>
+      <div>
+        <table class="table table-clearly table-width-min">
+          <tbody>
+            <tr>
+              <th>.fb</th>
+              <td class="localizer" data-lng-ja="必須">Required</td>
+              <td class="localizer" data-lng-ja="Flexboxを設定">Set up Flexbox</td>
+            </tr>
+            <tr>
+              <th>.fb-row</th>
+              <td class="localizer" data-lng-ja="任意">Optional</td>
+              <td class="localizer" data-lng-ja="水平方向にレイアウトする">Layout in the horizontal direction</td>
+            </tr>
+            <tr>
+              <th>.fb-column</th>
+              <td class="localizer" data-lng-ja="任意">Optional</td>
+              <td class="localizer" data-lng-ja="垂直方向にレイアウトする">Layout in the vertical direction</td>
+            </tr>
+            <tr>
+              <th>.fb-vh-center</th>
+              <td class="localizer" data-lng-ja="任意">Optional</td>
+              <td class="localizer" data-lng-ja="垂直・水平の中央にレイアウトする">Vertically / horizontally center</td>
+            </tr>
+            <tr>
+              <th>.fb-order-0 ~ 20</th>
+              <td class="localizer" data-lng-ja="任意">Optional</td>
+              <td class="localizer" data-lng-ja="順番を変える">Change the order</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </article>
+  <!-- Contents End -->
+
+<div id="sidebar" class="sidebar"></div>
+</main>
+<footer id="footer" class="footer"></footer>
+
+<script type="text/javascript">
+var route = '../';
+html_construction(route);
+
+$(document).ready(function(){
+  $('.localizer').essence_translation();
+  replace_url(route);
+  codes();
+});
+</script>
+</body>
+</html>

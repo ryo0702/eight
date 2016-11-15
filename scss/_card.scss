@@ -19,10 +19,7 @@
   }
 
   &.card-shadow {
-    @include transition(all 0.5s ease 0s);
-    &:hover {
-      @include box-shadow(0 2px 2px 0 rgba(#000,0.1));
-    }
+    @include box-shadow(0 2px 2px 0 rgba(#000,0.1));
   }
 
   &.card-hover-shadow {

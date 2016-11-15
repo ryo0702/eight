@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title class="localizer" data-lng-ja="フォーム - Eight">Form - Eight</title>
+  <link rel="shortcut icon" href="../img/favicon_256.ico" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="../img/favicon_16.ico" />
+  <link rel="stylesheet" href="../eight.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../original.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../inc/font-awesome/css/font-awesome.css" media="screen" title="eight">
+  <script src="../inc/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/eight.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.essence-validation.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.essence-translation.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/functions.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<header id="navbar" class="navbar boxshadow"></header>
+<main class="pad-top-60px pad-bottom-60px layout_sidebar_contents container">
+
+  <!-- Contents -->
+  <article class="contents">
+    <header>
+      <h1 class="localizer" data-lng-ja="フォーム">Form</h1>
+      <p class="localizer lead" data-lng-ja="Eightでは様々なContainer Classを用意しています。<br />複数のレスポンシブなコンテナを使って、自由度の高いレイアウトの基礎を組むことができます。">Eight offers various Container Classes.<br />Using multiple responsive containers, you can lay the foundation for a high degree of freedom layout.</p>
+    </header>
+    <section>
+      <h2 class="localizer" data-lng-ja="基本的なフォーム">Common form</h2>
+      <p class="localizer" data-lng-ja="jquery.essence-validation.jsを使うと、リアルタイムなフォームの検証も自動的にできるようになります。">With jquery.essence-validation.js, you can also real time validate forms automatically.</p>
+      <div class="example">
+        <form class="forms" id="validation">
+          <div class="forms-message message-error">Please enter all required inpts.</div>
+          <fieldset class="req">
+            <legend>ID</legend>
+            <div class="inp"><input type="text" name="abc" placeholder="ABC" /></div>
+          </fieldset>
+          <fieldset class="req">
+            <legend>Your Name</legend>
+            <div class="inp"><input type="text" name="abc" placeholder="ABC" /></div>
+            <div class="description">Description text.</div>
+          </fieldset>
+          <fieldset class="req req-email">
+            <legend>Email</legend>
+            <div class="inp"><input type="email" name="abc" placeholder="ABC" /></div>
+            <div class="description">Email only</div>
+          </fieldset>
+          <fieldset class="req">
+            <legend>Radio</legend>
+            <div class="inp">
+              <label><input type="radio" name="radio" value="radio1" checked /> Radio1</label>
+              <label><input type="radio" name="radio" value="radio2" /> Radio2</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Checkbox</legend>
+            <div class="inp">
+              <label><input type="checkbox" name="radio" value="check1" /> Check1</label>
+              <label><input type="checkbox" name="radio" value="check2" /> Check2</label>
+              <label><input type="checkbox" name="radio" value="check3" /> Check3</label>
+            </div>
+          </fieldset>
+          <fieldset class="req">
+            <legend>Select</legend>
+            <div class="inp">
+              <select name="select">
+                <option value="">Select option</option>
+                <option value="option1">Option1</option>
+                <option value="option2">Option2</option>
+                <option value="option3">Option3</option>
+              </select>
+            </div>
+          </fieldset>
+          <div class="submit">
+            <button type="submit" class="btn btn-primary submit">Submit</button>
+          </div>
+        </form>
+      </div>
+<pre class="mar-bottom-20px"><code><form id="validation">
+  <fieldset class="req">
+    <legend>ID</legend>
+    <div class="inp"><input type="text" name="abc" placeholder="ABC" /></div>
+  </fieldset>
+  <fieldset class="req">
+    <legend>Your Name</legend>
+    <div class="inp"><input type="text" name="abc" placeholder="ABC" /></div>
+    <div class="description">Description text.</div>
+  </fieldset>
+  <fieldset class="req req-email">
+    <legend>Email</legend>
+    <div class="inp"><input type="email" name="abc" placeholder="ABC" /></div>
+    <div class="description">Email only</div>
+  </fieldset>
+  <fieldset class="req">
+    <legend>Radio</legend>
+    <div class="inp">
+      <label><input type="radio" name="radio" value="radio1" checked /> Radio1</label>
+      <label><input type="radio" name="radio" value="radio2" /> Radio2</label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Checkbox</legend>
+    <div class="inp">
+      <label><input type="checkbox" name="radio" value="check1" /> Check1</label>
+      <label><input type="checkbox" name="radio" value="check2" /> Check2</label>
+      <label><input type="checkbox" name="radio" value="check3" /> Check3</label>
+    </div>
+  </fieldset>
+  <fieldset class="req">
+    <legend>Select</legend>
+    <div class="inp">
+      <select name="select">
+        <option value="">Select option</option>
+        <option value="option1">Option1</option>
+        <option value="option2">Option2</option>
+        <option value="option3">Option3</option>
+      </select>
+    </div>
+  </fieldset>
+  <div class="submit">
+    <button type="submit" class="btn btn-primary submit">Submit</button>
+  </div>
+</form></code></pre>
+    </section>
+    <section>
+      <h2 class="localizer" data-lng-ja="詳細">Detail</h2>
+      <div>
+        <table class="table table-clearly table-width-min">
+          <tbody>
+            <tr>
+              <th>.container</th>
+              <td class="localizer" data-lng-ja="必須">Required</td>
+              <td class="localizer" data-lng-ja="コンテナを設定">Set up Container</td>
+            </tr>
+            <tr>
+              <th>.container-fluid</th>
+              <td class="localizer" data-lng-ja="任意">Optional</td>
+              <td class="localizer" data-lng-ja="幅の広いコンテナを設定">Set up wide Container</td>
+            </tr>
+            <tr>
+              <th>.container-narrow</th>
+              <td class="localizer" data-lng-ja="任意">Optional</td>
+              <td class="localizer" data-lng-ja="幅の狭いコンテナを設定">Set up narrow Container</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </article>
+  <!-- Contents End -->
+
+<div id="sidebar" class="sidebar"></div>
+</main>
+<footer id="footer" class="footer"></footer>
+
+<script type="text/javascript">
+var route = '../';
+html_construction(route);
+
+$(document).ready(function(){
+  $('.localizer').essence_translation();
+  $('#validation').essence_validation();
+  replace_url(route);
+  codes();
+});
+</script>
+</body>
+</html>

@@ -24,33 +24,3 @@
   padding-top:20px;
   padding-bottom:20px;
 }
-
-// Color
-.billboard-navy {
-  background-color:#1f56b4;
-  color:#fff;
-  &.billboard-darken {
-    background-color:darken(#1f56b4,5%);
-  }
-}
-.billboard-red {
-  background-color:#f10606;
-  color:#fff;
-  &.billboard-darken {
-    background-color:darken(#f10606,5%);
-  }
-}
-.billboard-black {
-  background-color:#121212;
-  color:#fff;
-  &.billboard-darken {
-    background-color:darken(#121212,5%);
-  }
-}
-.billboard-white {
-  background-color:#fcfcfc;
-  color:#676767;
-  &.billboard-darken {
-    background-color:darken(#fcfcfc,5%);
-  }
-}

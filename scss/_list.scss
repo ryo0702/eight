@@ -9,6 +9,11 @@
     }
   }
 
+  & > dt,& > .title {
+    font-size:10px;
+    font-weight: bold;
+  }
+
   &.list-menu {
     dt,dd,li {
       & > a {
