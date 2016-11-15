@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title class="localizer" data-lng-ja="ビルボード - Eight">Billboard - Eight</title>
+  <link rel="shortcut icon" href="../img/favicon_256.ico" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="../img/favicon_16.ico" />
+  <link rel="stylesheet" href="../eight.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../original.css" media="screen" title="eight">
+  <link rel="stylesheet" href="../inc/font-awesome/css/font-awesome.css" media="screen" title="eight">
+  <script src="../inc/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/eight.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.essence-translation.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/functions.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<header id="navbar" class="navbar boxshadow"></header>
+<main class="pad-top-60px pad-bottom-60px layout_sidebar_contents container">
+
+  <!-- Contents -->
+  <article class="contents">
+    <header>
+      <h1 class="localizer" data-lng-ja="ビルボード">Billboard</h1>
+      <p class="localizer lead" data-lng-ja="ビルボードは看板のように注目を集めることのできるデザインパーツです。<br />フルスクリーン、ハーフスクリーンなど、様々なサイズを選ぶこともできます。">Billboard is a design part that can draw attention like a sign.<br />You can also select various sizes such as full screen, half screen, etc.</p>
+    </header>
+    <section>
+      <h2 class="localizer" data-lng-ja="ビルボードの基本設定">Basic setting of Billboard</h2>
+      <p class="localizer" data-lng-ja="ここでは<span class='code'>.billboard</span>と<span class='code'>.billboard-full</span>を併用して、フルスクリーンにしています。また、<span class='code'>.fb</span><span class='code'>.fb-center-all</span>のFlexbox機機能を利用して、要素の中央になるように設定をしています。">Container classes with different widths such as container, container-fluid, container-narrow are prepared.</p>
+      <div class="example">
+        <div class="billboard billboard-full billboard-danger fb fb-center-all">.billboard-full</div>
+      </div>
+      <pre class="mar-bottom-20px"><code><div class="billboard billboard-full billboard-danger fb fb-center-all">.billboard-full</div></code></pre>
+    </section>
+  </article>
+  <!-- Contents End -->
+
+<div id="sidebar" class="sidebar"></div>
+</main>
+<footer id="footer" class="footer"></footer>
+
+<script type="text/javascript">
+var route = '../';
+html_construction(route);
+
+$(document).ready(function(){
+  $('.localizer').essence_translation();
+  replace_url(route);
+  codes();
+});
+</script>
+</body>
+</html>

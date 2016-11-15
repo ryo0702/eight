@@ -10,6 +10,7 @@
   font-size:16px;
   margin:0;
   display: inline-block;
+  border:solid 1px rgba(#000,0.1);
 
   // Size
   &.btn-block {
@@ -35,6 +36,10 @@
   &.btn-xlarge {
     font-size:32px;
     padding:18px 28px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 
   &.btn-notround {
@@ -92,63 +97,6 @@
         padding:18px 28px;
         top:10px;
       }
-    }
-  }
-
-  &.btn-skeuomorphic {}
-
-  &,&.btn-primary {
-    color:map-get($color_primary,font);
-    background-color:map-get($color_primary,bg);
-    &:hover {
-      background-color:map-get($color_primary,bg_hover);
-    }
-    &:active,&:focus {
-      background-color:map-get($color_primary,bg_active);
-    }
-  }
-
-  &.btn-success {
-    color:map-get($color_success,font);
-    background-color:map-get($color_success,bg);
-    &:hover {
-      background-color:map-get($color_success,bg_hover);
-    }
-    &:active,&:focus {
-      background-color:map-get($color_success,bg_active);
-    }
-  }
-
-  &.btn-info {
-    color:map-get($color_info,font);
-    background-color:map-get($color_info,bg);
-    &:hover {
-      background-color:map-get($color_info,bg_hover);
-    }
-    &:active,&:focus {
-      background-color:map-get($color_info,bg_active);
-    }
-  }
-
-  &.btn-warning {
-    color:map-get($color_warning,font);
-    background-color:map-get($color_warning,bg);
-    &:hover {
-      background-color:map-get($color_warning,bg_hover);
-    }
-    &:active,&:focus {
-      background-color:map-get($color_warning,bg_active);
-    }
-  }
-
-  &.btn-danger {
-    color:map-get($color_danger,font);
-    background-color:map-get($color_danger,bg);
-    &:hover {
-      background-color:map-get($color_danger,bg_hover);
-    }
-    &:active,&:focus {
-      background-color:map-get($color_danger,bg_active);
     }
   }
 
