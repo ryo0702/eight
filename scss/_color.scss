@@ -43,6 +43,10 @@ select {
     color:map-get($color_common,font);
   }
 }
+textarea {
+  color:map-get($color_common,font);
+  border:solid 1px map-get($color_common,border);
+}
 div.inp {
   &.vali-check-danger {
     input[type="text"],input[type="number"],input[type="email"],input[type="password"] {
