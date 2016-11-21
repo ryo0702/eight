@@ -1,0 +1,37 @@
+// Form
+input[type="text"],input[type="number"],input[type="email"],input[type="password"]{
+  border:solid 1px map-get($color_common,border);
+  color:map-get($color_common,font);
+  &:active,&:focus {
+    @include box-shadow(0 0 0 3px rgba(#000,0.1) inset);
+  }
+}
+select {
+  color:map-get($color_common,font);
+  border:solid 1px map-get($color_common,border);
+  option {
+    color:map-get($color_common,font);
+  }
+}
+textarea {
+  color:map-get($color_common,font);
+  border:solid 1px map-get($color_common,border);
+}
+div.inp {
+  &.vali-check-danger {
+    input[type="text"],input[type="number"],input[type="email"],input[type="password"] {
+      @include box-shadow(0 0 0 3px rgba(map-get($color_danger,bg),0.1) inset);
+    }
+    select {
+      @include box-shadow(0 0 0 3px rgba(map-get($color_danger,bg),0.1) inset);
+    }
+  }
+  &.vali-check-success {
+    input[type="text"],input[type="number"],input[type="email"],input[type="password"] {
+      @include box-shadow(0 0 0 3px rgba(map-get($color_success,bg),0.1));
+    }
+    select {
+      @include box-shadow(0 0 0 3px rgba(map-get($color_success,bg),0.1));
+    }
+  }
+}

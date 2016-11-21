@@ -1,0 +1,27 @@
+// Billboard
+.billboard {
+  &,&.billboard-default {
+    color:map-get($color_default,font);
+    background-color:map-get($color_default,bg);
+  }
+  &.billboard-primary {
+    color:map-get($color_primary,font);
+    background-color:map-get($color_primary,bg);
+  }
+  &.billboard-success {
+    color:map-get($color_success,font);
+    background-color:map-get($color_success,bg);
+  }
+  &.billboard-info {
+    color:map-get($color_info,font);
+    background-color:map-get($color_info,bg);
+  }
+  &.billboard-warning {
+    color:map-get($color_warning,font);
+    background-color:map-get($color_warning,bg);
+  }
+  &.billboard-danger {
+    color:map-get($color_danger,font);
+    background-color:map-get($color_danger,bg);
+  }
+}

@@ -37,6 +37,7 @@
         height:$navbar_height;
         margin-right:20px;
         font-size:15px;
+        position: relative;
         @include display-flex();
         @include flex-direction(column);
         @include justify-content(center);
@@ -50,8 +51,21 @@
           &:hover {}
         }
         & > ul {
+          position: absolute;
+          top:$navbar_height - 12px;
+          left:center;
+          display: none;
+          z-index:55;
+          min-width:50px;
+          max-width:300px;
           & > li {
+            width:100%;
             & > a {
+              text-align: center;
+              width:100%;
+              display: block;
+              font-size:13px;
+              padding:10px;
               @include transition(all 0.5s ease 0s);
               &:hover {}
             }
@@ -112,6 +126,10 @@
               & > a {
                 border-bottom:0;
               }
+            }
+            & > ul {
+              position: static;
+              display: block;
             }
           }
         }

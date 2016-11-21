@@ -18,3 +18,7 @@ function replace_url(route){
     });
   }
 }
+
+$(document).ready(function(){
+  $("body").eight();
+});

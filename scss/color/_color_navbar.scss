@@ -1,0 +1,62 @@
+
+// Navbar
+.navbar {
+  color:map-get($color_navbar,font);
+  background-color:map-get($color_navbar,bg);
+  h1 {
+    color:map-get($color_navbar,font);
+    & > a {
+      color:map-get($color_navbar,font);
+      &:hover {
+        color:map-get($color_navbar,font_link);
+      }
+    }
+  }
+  nav {
+    & > ul {
+      & > li {
+        & > a {
+          color:map-get($color_navbar,font);
+          &:hover {
+            color:map-get($color_navbar,font_hover);
+          }
+        }
+        & > ul {
+          background-color:map-get($color_navbar,bg);
+          & > li {
+            background-color:map-get($color_navbar,bg);
+            color:map-get($color_navbar,font);
+            & > a {
+              background-color:map-get($color_navbar,bg);
+              color:map-get($color_navbar,font);
+              &:hover {
+                background-color:map-get($color_navbar,bg);
+                color:map-get($color_navbar,font_hover);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  $mqsizing:mqSizing("md");
+  @media screen and (max-width:$mqsizing) {
+    .container,.container-fluid {
+      button.toggle {
+        background-color:map-get($color_navbar,bg);
+        border-top:1px solid map-get($color_navbar,border);
+        &:hover {
+          color:map-get($color_navbar,font_hover);
+        }
+      }
+      nav {
+        & > ul {
+          border-top:1px solid map-get($color_navbar,border);
+          a {
+            border-top:1px solid map-get($color_navbar,border);
+          }
+        }
+      }
+    }
+  }
+}

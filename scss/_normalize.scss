@@ -1,13 +1,10 @@
 @charset "utf-8";
 
-* {
-  word-wrap:break-word;
-}
-
 body {
   font-family:"游ゴシック", "YuGothic-Medium","YuGo-Medium",'-apple-system','Helvetica Neue','Hiragino Kaku Gothic ProN','メイリオ',"meiryo",sans-serif;
   padding:0;
   margin:0;
+  word-wrap:break-word;
 }
 
 h1,h2,h3,h4,h5,h6 {

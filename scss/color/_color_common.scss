@@ -1,0 +1,27 @@
+// Common
+body {
+  color:map-get($color_common,font);
+  background-color:map-get($color_common,bg);
+}
+
+a {
+  color:map-get($color_link,font);
+  &:hover {
+    color:map-get($color_link,font_hover);
+  }
+  &:active {
+    color:map-get($color_link,font_active);
+  }
+}
+
+hr,.separate {
+  background-color:map-get($color_common,border);
+}
+
+
+
+// Table
+table.table-clearly {
+  tr {
+  }
+}
