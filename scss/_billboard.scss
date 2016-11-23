@@ -4,6 +4,19 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  &.billboard-vertical-center,&.billboard-vertical-bottom,&.billboard-vertical-top,&.billboard-horizontal-left,&.billboard-horizontal-center,&.billboard-horizontal-right {
+    @include display-flex();
+    @include flex-direction(column);
+  }
+  &.billboard-vertical-center {@include align-items(center);}
+  &.billboard-vertical-bottom {@include align-items(flex-end);}
+  &.billboard-vertical-top {@include align-items(flex-start);}
+  &.billboard-horizontal-left {text-align: left;}
+  &.billboard-horizontal-center {text-align: center;}
+  &.billboard-horizontal-right {text-align: right;}
+  & > .billboard-content {
+    @include box-sizing(border-box);
+  }
 }
 
 // Size
