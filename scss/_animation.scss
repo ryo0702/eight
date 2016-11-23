@@ -1,0 +1,38 @@
+.animation-bgi-x-slow {
+  background-position-x: left;
+  @include animation-name(animation_bgi_x);
+	@include animation-duration(70s);
+	@include animation-timing-function(ease);
+	@include animation-iteration-count(infinite);
+}
+@include keyframes(animation_bgi_x) {
+  0% {
+    background-position-x: left;
+  }
+  50% {
+    background-position-x: right;
+  }
+  100% {
+    background-position-x: left;
+  }
+}
+
+
+.animation-bgi-y-slow {
+  background-position-y: top;
+  @include animation-name(animation_bgi_y);
+	@include animation-duration(70s);
+	@include animation-timing-function(ease);
+	@include animation-iteration-count(infinite);
+}
+@include keyframes(animation_bgi_y) {
+  0% {
+    background-position-y: top;
+  }
+  50% {
+    background-position-y: bottom;
+  }
+  100% {
+    background-position-y: top;
+  }
+}

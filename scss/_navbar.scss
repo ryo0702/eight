@@ -1,3 +1,5 @@
+$navbar_height:80px;
+
 .navbar {
   position:fixed;
   z-index:51;
@@ -19,7 +21,10 @@
     & > a {
       display: block;
       @include transition(all 0.5s ease 0s);
-      &:hover {}
+      & > img.logo {
+        height:$navbar_height - 40px;
+        width:auto;
+      }
     }
   }
   button.toggle {
@@ -77,6 +82,7 @@
   $mqsizing:mqSizing("md");
   @media screen and (max-width:$mqsizing) {
     height:auto;
+    overflow-y:visible;
     .container,.container-fluid {
       @include display-flex();
       @include flex-direction(column);
@@ -128,8 +134,21 @@
               }
             }
             & > ul {
+              width:100%;
+              max-width:100%;
               position: static;
               display: block;
+              @include clearfix;
+              & > li {
+                width:50%;
+                float: left;
+                & > a {
+                  display: block;
+                  width:100%;
+                  padding:15px 0;
+                  @include box-sizing("border-box");
+                }
+              }
             }
           }
         }

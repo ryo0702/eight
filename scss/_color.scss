@@ -130,8 +130,6 @@
   }
 }
 
-
-
 // List
 .list {
   & > li,dd {
@@ -148,6 +146,11 @@
       }
     }
   }
+}
+
+
+// Footer
+.footer {
 }
 
 @import "color/color_navbar";

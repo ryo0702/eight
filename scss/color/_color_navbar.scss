@@ -52,8 +52,23 @@
       nav {
         & > ul {
           border-top:1px solid map-get($color_navbar,border);
-          a {
-            border-top:1px solid map-get($color_navbar,border);
+          & > li {
+            & > a {
+              border-top:1px solid map-get($color_navbar,border);
+            }
+            & > ul {
+              border-top:1px solid map-get($color_navbar,border);
+              & > li {
+                & > a {
+
+                }
+                &:nth-child(even){
+                  & > a {
+                    border-left:1px solid map-get($color_navbar,border);
+                  }
+                }
+              }
+            }
           }
         }
       }

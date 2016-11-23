@@ -2,6 +2,16 @@
   @include box-shadow(0 1px 1px 0 rgba(#000,0.1));
 }
 
+.bgi-position-center-center {background-position:center center;}
+.bgi-position-center-top {background-position:center top;}
+.bgi-position-center-bottom {background-position:center bottom;}
+.bgi-position-right-center {background-position:right center;}
+.bgi-position-right-top {background-position:right top;}
+.bgi-position-right-bottom {background-position:right bottom;}
+.bgi-position-left-center {background-position:left center;}
+.bgi-position-left-top {background-position:left top;}
+.bgi-position-left-bottom {background-position:left bottom;}
+
 
 @for $i from 0 through 20 {
   .mar-#{$i * 5}px {margin:#{$i * 5}px;}
