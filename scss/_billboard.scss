@@ -17,6 +17,11 @@
   & > .billboard-content {
     @include box-sizing(border-box);
   }
+  & > .billboard-bgi {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 // Size
