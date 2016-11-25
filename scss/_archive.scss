@@ -1,4 +1,30 @@
-.archive {}
+.archive {
+  .post {}
+  a.post {
+    display: block;
+  }
+}
+
+.archive-1column {
+  .post {
+    header {
+      margin:0;
+      padding:0;
+      & > h2 {
+        margin:0;
+        padding:0;
+      }
+      & > p {
+        margin:0;
+        padding:0;
+      }
+    }
+    .excerpt {
+      margin:0;
+      padding:0;
+    }
+  }
+}
 
 .archive-2column {
   @include display-flex();

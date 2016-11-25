@@ -1,0 +1,55 @@
+.footer {
+}
+
+.sidebar {
+  $mqsizing:mqSizing("md");
+  @media screen and (max-width:$mqsizing) {
+    border-top:solid 1px map-get($color_common,border);
+  }
+}
+
+
+// Contents
+.contents{
+  header {
+    .lead {color:lighten(map-get($color_common,font),10%);}
+    .dates {
+      color:lighten(map-get($color_common,font),15%);
+      span {
+        &:after {
+          color:lighten(map-get($color_common,font),25%);
+        }
+      }
+    }
+  }
+  section {
+    color:lighten(map-get($color_common,font),10%);
+  }
+}
+
+
+// Dropdown menu
+.dropdown-menu {
+  ul {
+    background-color:map-get($color_common,bg);
+    border:solid 1px map-get($color_common,border);
+  }
+}
+
+// List
+.list {
+  & > li,dd {
+    &.separate {
+      background-color:map-get($color_common,border);
+    }
+  }
+  &.list-menu {
+    dt,dd,li {
+      & > a {
+        &:hover,&:active,&.active {
+          background-color:darken(map-get($color_common,bg),8%);
+        }
+      }
+    }
+  }
+}
