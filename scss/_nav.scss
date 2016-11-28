@@ -1,0 +1,45 @@
+.nav-topnextprev {
+  margin-top:40px;
+  width:100%;
+  @include display-flex();
+  @include flex-direction(row);
+  @include flex-wrap(nowrap);
+  @include border-radius(3px);
+  & > div {
+    &.prev {
+      width:20%;
+    }
+    &.next {
+      width:20%;
+    }
+    &.top {
+      width:60%;
+    }
+    @include box-sizing(border-box);
+    text-align: center;
+    & > a,& > span.no {
+      display: block;
+      font-size:30px;
+      @include box-sizing(border-box);
+      padding:10px;
+    }
+    & > a {
+    }
+    & > span.no {
+    }
+  }
+}
+
+.nav-tags {
+  .tags {
+    margin-bottom:-10px;
+    a.tag {
+      @extend .btn;
+      display: inline-block;
+      padding:10px 20px;
+      margin-right:10px!important;
+      margin-bottom:10px!important;
+      i {margin-right:10px;}
+    }
+  }
+}

@@ -14,7 +14,7 @@
       color:rgba(map-get($color_default,font),0.5);
       background-color:desaturate(map-get($color_default,bg),35%);
     }
-    &.lighten{
+    &.btn-lighten{
       color:lighten(map-get($color_default,font),10%);
       background-color:lighten(map-get($color_default,bg),10%);
       &:hover {
@@ -28,7 +28,7 @@
         background-color:desaturate(lighten(map-get($color_default,bg),10%),35%);
       }
     }
-    &.darken{
+    &.btn-darken{
       color:darken(map-get($color_default,font),10%);
       background-color:darken(map-get($color_default,bg),10%);
       &:hover {
@@ -56,7 +56,7 @@
       color:rgba(map-get($color_primary,font),0.5);
       background-color:desaturate(map-get($color_primary,bg),35%);
     }
-    &.lighten{
+    &.btn-lighten{
       color:lighten(map-get($color_primary,font),10%);
       background-color:lighten(map-get($color_primary,bg),10%);
       &:hover {
@@ -70,7 +70,7 @@
         background-color:desaturate(lighten(map-get($color_primary,bg),10%),35%);
       }
     }
-    &.darken{
+    &.btn-darken{
       color:darken(map-get($color_primary,font),10%);
       background-color:darken(map-get($color_primary,bg),10%);
       &:hover {
@@ -98,7 +98,7 @@
       color:rgba(map-get($color_success,font),0.5);
       background-color:desaturate(map-get($color_success,bg),35%);
     }
-    &.lighten{
+    &.btn-lighten{
       color:lighten(map-get($color_success,font),10%);
       background-color:lighten(map-get($color_success,bg),10%);
       &:hover {
@@ -112,7 +112,7 @@
         background-color:desaturate(lighten(map-get($color_success,bg),10%),35%);
       }
     }
-    &.darken{
+    &.btn-darken{
       color:darken(map-get($color_success,font),10%);
       background-color:darken(map-get($color_success,bg),10%);
       &:hover {
@@ -140,7 +140,7 @@
       color:rgba(map-get($color_info,font),0.5);
       background-color:desaturate(map-get($color_info,bg),35%);
     }
-    &.lighten{
+    &.btn-lighten{
       color:lighten(map-get($color_info,font),10%);
       background-color:lighten(map-get($color_info,bg),10%);
       &:hover {
@@ -154,7 +154,7 @@
         background-color:desaturate(lighten(map-get($color_info,bg),10%),35%);
       }
     }
-    &.darken{
+    &.btn-darken{
       color:darken(map-get($color_info,font),10%);
       background-color:darken(map-get($color_info,bg),10%);
       &:hover {
@@ -182,7 +182,7 @@
       color:rgba(map-get($color_warning,font),0.5);
       background-color:desaturate(map-get($color_warning,bg),35%);
     }
-    &.lighten{
+    &.btn-lighten{
       color:lighten(map-get($color_warning,font),10%);
       background-color:lighten(map-get($color_warning,bg),10%);
       &:hover {
@@ -196,7 +196,7 @@
         background-color:desaturate(lighten(map-get($color_warning,bg),10%),35%);
       }
     }
-    &.darken{
+    &.btn-darken{
       color:darken(map-get($color_warning,font),10%);
       background-color:darken(map-get($color_warning,bg),10%);
       &:hover {
@@ -225,7 +225,7 @@
       background-color:desaturate(map-get($color_danger,bg),35%);
     }
   }
-  &.lighten{
+  &.btn-lighten{
     color:lighten(map-get($color_danger,font),10%);
     background-color:lighten(map-get($color_danger,bg),10%);
     &:hover {
@@ -239,7 +239,7 @@
       background-color:desaturate(lighten(map-get($color_danger,bg),10%),35%);
     }
   }
-  &.darken{
+  &.btn-darken{
     color:darken(map-get($color_danger,font),10%);
     background-color:darken(map-get($color_danger,bg),10%);
     &:hover {

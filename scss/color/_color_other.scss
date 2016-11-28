@@ -69,3 +69,19 @@
     }
   }
 }
+
+
+// Navigation
+.nav-topnextprev {
+  border:solid 1px map-get($color_common,border);
+  background-color:darken(map-get($color_common,bg),3%);
+  & > div {
+    &.top {
+      border-left:solid 1px map-get($color_common,border);
+      border-right:solid 1px map-get($color_common,border);
+    }
+    & > span.no {
+      color:darken(map-get($color_common,bg),6%);
+    }
+  }
+}
