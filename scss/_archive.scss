@@ -18,6 +18,11 @@
 }
 
 .archive-1column {
+  .post,&.post-thumbnail {
+    &:last-child {
+      @include box-shadow(none);
+    }
+  }
   .post {
     padding:40px 20px;
     @include transition(all 0.5s ease 0s);
@@ -68,9 +73,6 @@
           opacity: 1;
         }
     }
-      &:last-child {
-        @include box-shadow(none);
-      }
       &:hover {
         & > figure.thumbnail {
           img {
@@ -92,5 +94,18 @@
   }
   @media screen and (max-width:$mqsizing) {
     display: block;
+  }
+}
+
+.pagination,.pavger {
+  & > span,& > a {
+    display: inline-block;
+    @extend .btn;
+  }
+  & > span {
+    cursor: default;
+  }
+  & > a {
+    &.next {}
   }
 }

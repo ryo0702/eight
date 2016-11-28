@@ -8,6 +8,22 @@
   }
 }
 
+.pagination,.pager {
+  margin-top:40px;
+  border-top:solid 2px map-get($color_common,border);
+  padding-top:40px;
+  & > span,& > a {
+    display: inline-block;
+  }
+  & > span {
+    color:rgba(map-get($color_default,font),0.5);
+    background-color:desaturate(map-get($color_default,bg),35%);
+  }
+  & > a {
+    &.next {}
+  }
+}
+
 
 // Contents
 .contents{

@@ -56,7 +56,8 @@
     & > .sidebar {
       @include order(1);
       width:100%;
-      padding-right:0;
+      margin-top:40px;
+      padding-top:40px;
     }
     & > .contents {
       @include order(0);
@@ -69,6 +70,10 @@
   & > .sidebar {
     padding-right:40px;
     @include order(0);
+    $mqsizing:mqSizing("md");
+    @media screen and (max-width:$mqsizing) {
+      padding-right:0px;
+    }
   }
   & > .contents {
     @include order(1);
@@ -79,6 +84,10 @@
   & > .sidebar {
     padding-left:40px;
     @include order(1);
+    $mqsizing:mqSizing("md");
+    @media screen and (max-width:$mqsizing) {
+      padding-left:0px;
+    }
   }
   & > .contents {
     @include order(0);
