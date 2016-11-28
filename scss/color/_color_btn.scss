@@ -14,6 +14,34 @@
       color:rgba(map-get($color_default,font),0.5);
       background-color:desaturate(map-get($color_default,bg),35%);
     }
+    &.lighten{
+      color:lighten(map-get($color_default,font),10%);
+      background-color:lighten(map-get($color_default,bg),10%);
+      &:hover {
+        background-color:lighten(map-get($color_default,bg_hover),10%);
+      }
+      &:active,&:focus {
+        background-color:lighten(map-get($color_default,bg_active),10%);
+      }
+      &:disabled,&.disabled {
+        color:rgba(lighten(map-get($color_default,font),10%),0.5);
+        background-color:desaturate(lighten(map-get($color_default,bg),10%),35%);
+      }
+    }
+    &.darken{
+      color:darken(map-get($color_default,font),10%);
+      background-color:darken(map-get($color_default,bg),10%);
+      &:hover {
+        background-color:darken(map-get($color_default,bg_hover),10%);
+      }
+      &:active,&:focus {
+        background-color:darken(map-get($color_default,bg_active),10%);
+      }
+      &:disabled,&.disabled {
+        color:rgba(darken(map-get($color_default,font),10%),0.5);
+        background-color:desaturate(darken(map-get($color_default,bg),10%),35%);
+      }
+    }
   }
   &.btn-primary {
     color:map-get($color_primary,font);
@@ -27,6 +55,34 @@
     &:disabled,&.disabled {
       color:rgba(map-get($color_primary,font),0.5);
       background-color:desaturate(map-get($color_primary,bg),35%);
+    }
+    &.lighten{
+      color:lighten(map-get($color_primary,font),10%);
+      background-color:lighten(map-get($color_primary,bg),10%);
+      &:hover {
+        background-color:lighten(map-get($color_primary,bg_hover),10%);
+      }
+      &:active,&:focus {
+        background-color:lighten(map-get($color_primary,bg_active),10%);
+      }
+      &:disabled,&.disabled {
+        color:rgba(lighten(map-get($color_primary,font),10%),0.5);
+        background-color:desaturate(lighten(map-get($color_primary,bg),10%),35%);
+      }
+    }
+    &.darken{
+      color:darken(map-get($color_primary,font),10%);
+      background-color:darken(map-get($color_primary,bg),10%);
+      &:hover {
+        background-color:darken(map-get($color_primary,bg_hover),10%);
+      }
+      &:active,&:focus {
+        background-color:darken(map-get($color_primary,bg_active),10%);
+      }
+      &:disabled,&.disabled {
+        color:rgba(darken(map-get($color_primary,font),10%),0.5);
+        background-color:desaturate(darken(map-get($color_primary,bg),10%),35%);
+      }
     }
   }
   &.btn-success {
@@ -42,6 +98,34 @@
       color:rgba(map-get($color_success,font),0.5);
       background-color:desaturate(map-get($color_success,bg),35%);
     }
+    &.lighten{
+      color:lighten(map-get($color_success,font),10%);
+      background-color:lighten(map-get($color_success,bg),10%);
+      &:hover {
+        background-color:lighten(map-get($color_success,bg_hover),10%);
+      }
+      &:active,&:focus {
+        background-color:lighten(map-get($color_success,bg_active),10%);
+      }
+      &:disabled,&.disabled {
+        color:rgba(lighten(map-get($color_success,font),10%),0.5);
+        background-color:desaturate(lighten(map-get($color_success,bg),10%),35%);
+      }
+    }
+    &.darken{
+      color:darken(map-get($color_success,font),10%);
+      background-color:darken(map-get($color_success,bg),10%);
+      &:hover {
+        background-color:darken(map-get($color_success,bg_hover),10%);
+      }
+      &:active,&:focus {
+        background-color:darken(map-get($color_success,bg_active),10%);
+      }
+      &:disabled,&.disabled {
+        color:rgba(darken(map-get($color_success,font),10%),0.5);
+        background-color:desaturate(darken(map-get($color_success,bg),10%),35%);
+      }
+    }
   }
   &.btn-info {
     color:map-get($color_info,font);
@@ -55,6 +139,34 @@
     &:disabled,&.disabled {
       color:rgba(map-get($color_info,font),0.5);
       background-color:desaturate(map-get($color_info,bg),35%);
+    }
+    &.lighten{
+      color:lighten(map-get($color_info,font),10%);
+      background-color:lighten(map-get($color_info,bg),10%);
+      &:hover {
+        background-color:lighten(map-get($color_info,bg_hover),10%);
+      }
+      &:active,&:focus {
+        background-color:lighten(map-get($color_info,bg_active),10%);
+      }
+      &:disabled,&.disabled {
+        color:rgba(lighten(map-get($color_info,font),10%),0.5);
+        background-color:desaturate(lighten(map-get($color_info,bg),10%),35%);
+      }
+    }
+    &.darken{
+      color:darken(map-get($color_info,font),10%);
+      background-color:darken(map-get($color_info,bg),10%);
+      &:hover {
+        background-color:darken(map-get($color_info,bg_hover),10%);
+      }
+      &:active,&:focus {
+        background-color:darken(map-get($color_info,bg_active),10%);
+      }
+      &:disabled,&.disabled {
+        color:rgba(darken(map-get($color_info,font),10%),0.5);
+        background-color:desaturate(darken(map-get($color_info,bg),10%),35%);
+      }
     }
   }
   &.btn-warning {
@@ -70,6 +182,34 @@
       color:rgba(map-get($color_warning,font),0.5);
       background-color:desaturate(map-get($color_warning,bg),35%);
     }
+    &.lighten{
+      color:lighten(map-get($color_warning,font),10%);
+      background-color:lighten(map-get($color_warning,bg),10%);
+      &:hover {
+        background-color:lighten(map-get($color_warning,bg_hover),10%);
+      }
+      &:active,&:focus {
+        background-color:lighten(map-get($color_warning,bg_active),10%);
+      }
+      &:disabled,&.disabled {
+        color:rgba(lighten(map-get($color_warning,font),10%),0.5);
+        background-color:desaturate(lighten(map-get($color_warning,bg),10%),35%);
+      }
+    }
+    &.darken{
+      color:darken(map-get($color_warning,font),10%);
+      background-color:darken(map-get($color_warning,bg),10%);
+      &:hover {
+        background-color:darken(map-get($color_warning,bg_hover),10%);
+      }
+      &:active,&:focus {
+        background-color:darken(map-get($color_warning,bg_active),10%);
+      }
+      &:disabled,&.disabled {
+        color:rgba(darken(map-get($color_warning,font),10%),0.5);
+        background-color:desaturate(darken(map-get($color_warning,bg),10%),35%);
+      }
+    }
   }
   &.btn-danger {
     color:map-get($color_danger,font);
@@ -83,6 +223,34 @@
     &:disabled,&.disabled {
       color:rgba(map-get($color_danger,font),0.5);
       background-color:desaturate(map-get($color_danger,bg),35%);
+    }
+  }
+  &.lighten{
+    color:lighten(map-get($color_danger,font),10%);
+    background-color:lighten(map-get($color_danger,bg),10%);
+    &:hover {
+      background-color:lighten(map-get($color_danger,bg_hover),10%);
+    }
+    &:active,&:focus {
+      background-color:lighten(map-get($color_danger,bg_active),10%);
+    }
+    &:disabled,&.disabled {
+      color:rgba(lighten(map-get($color_danger,font),10%),0.5);
+      background-color:desaturate(lighten(map-get($color_danger,bg),10%),35%);
+    }
+  }
+  &.darken{
+    color:darken(map-get($color_danger,font),10%);
+    background-color:darken(map-get($color_danger,bg),10%);
+    &:hover {
+      background-color:darken(map-get($color_danger,bg_hover),10%);
+    }
+    &:active,&:focus {
+      background-color:darken(map-get($color_danger,bg_active),10%);
+    }
+    &:disabled,&.disabled {
+      color:rgba(darken(map-get($color_danger,font),10%),0.5);
+      background-color:desaturate(darken(map-get($color_danger,bg),10%),35%);
     }
   }
 }
