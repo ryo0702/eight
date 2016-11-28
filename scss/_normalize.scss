@@ -40,8 +40,12 @@ header,main,aside,section,article,p {
   margin:0;
 }
 
-input,select {
+input,select,textarea {
   &:active,&:focus {outline:none;}
+}
+
+textarea {
+  padding:10px;
 }
 
 button,.btn {

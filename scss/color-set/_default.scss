@@ -1,0 +1,65 @@
+$color_common:(
+  font:#4f4f4f,
+  bg:#f7f7f7,
+  bg_light:#FFF,
+  border:#dedede,
+);
+$color_link:(
+  font:#474747,
+  font_hover:#777777,
+  active:#555555
+);
+$color_navbar:(
+  font:#3b3b3b,
+  font_hover:#8e8e8e,
+  bg:#fefefe,
+  border:#ececec
+);
+$color_default:(
+  font:#4f4f4f,
+  font_hover:#4f4f4f,
+  bg:#f7f7f7,
+  bg_hover:#ffffff,
+  bg_active:#f4f4f4,
+  darkness:"thin"
+);
+$color_primary:(
+  font:#ffffff,
+  font_hover:#ffffff,
+  bg:#1b86f5,
+  bg_hover:#3095fe,
+  bg_active:#3095fe,
+  darkness:"thin"
+);
+$color_success:(
+  font:#ffffff,
+  font_hover:#ffffff,
+  bg:#14e74f,
+  bg_hover:#30fb69,
+  bg_active:#11d648,
+  darkness:"dark"
+);
+$color_info:(
+  font:#ffffff,
+  font_hover:#ffffff,
+  bg:#1494e7,
+  bg_hover:#2dacff,
+  bg_active:#0f88d6,
+  darkness:"dark"
+);
+$color_warning:(
+  font:#ffffff,
+  font_hover:#ffffff,
+  bg:#e79f14,
+  bg_hover:#faae1b,
+  bg_active:#de9811,
+  darkness:"dark"
+);
+$color_danger:(
+  font:#ffffff,
+  font_hover:#ffffff,
+  bg:#e7143a,
+  bg_hover:#fa1a43,
+  bg_active:#da0f34,
+  darkness:"dark"
+);

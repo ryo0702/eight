@@ -4,83 +4,11 @@
 /*!
 * Eight
 * License: The MIT License
+* Version: 0.1.20
 * License URI: https://opensource.org/licenses/mit-license.php
 */
 
-$color_navbar_font:#3b3b3b;
-$color_navbar_font_hover:#8e8e8e;
-$color_navbar_bg:#fefefe;
-$color_navbar_shadow:#ececec;
-
-$color_button_font:#7c7c7c;
-$color_button_bg:#f4f4f4;
-$color_button_bg_hover:#fbfbfb;
-$color_button_bg_active:#e0e0e0;
-
-$color_common:(
-  font:#4f4f4f,
-  bg:#f7f7f7,
-  border:#dedede,
-);
-$color_link:(
-  font:#474747,
-  font_hover:#777777,
-  active:#555555
-);
-$color_navbar:(
-  font:#3b3b3b,
-  font_hover:#8e8e8e,
-  bg:#fefefe,
-  border:#ececec
-);
-$color_default:(
-  font:#4f4f4f,
-  font_hover:#4f4f4f,
-  bg:#f7f7f7,
-  bg_hover:#ffffff,
-  bg_active:#f4f4f4,
-  darkness:"thin"
-);
-$color_primary:(
-  font:#ffffff,
-  font_hover:#ffffff,
-  bg:#1b86f5,
-  bg_hover:#3095fe,
-  bg_active:#3095fe,
-  darkness:"thin"
-);
-$color_success:(
-  font:#ffffff,
-  font_hover:#ffffff,
-  bg:#14e74f,
-  bg_hover:#30fb69,
-  bg_active:#11d648,
-  darkness:"dark"
-);
-$color_info:(
-  font:#ffffff,
-  font_hover:#ffffff,
-  bg:#1494e7,
-  bg_hover:#2dacff,
-  bg_active:#0f88d6,
-  darkness:"dark"
-);
-$color_warning:(
-  font:#ffffff,
-  font_hover:#ffffff,
-  bg:#e79f14,
-  bg_hover:#faae1b,
-  bg_active:#de9811,
-  darkness:"dark"
-);
-$color_danger:(
-  font:#ffffff,
-  font_hover:#ffffff,
-  bg:#e7143a,
-  bg_hover:#fa1a43,
-  bg_active:#da0f34,
-  darkness:"dark"
-);
+@import "scss/color-set/default";
 
 // Google Web font
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');

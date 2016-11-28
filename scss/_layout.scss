@@ -42,12 +42,11 @@
   @include flex-direction(row);
   @include flex-wrap(nowrap);
   & > .sidebar {
-    width:20%;
-    padding-right:30px;
+    width:25%;
     @include box-sizing(border-box);
   }
   & > .contents {
-    width:80%;
+    width:75%;
     @include box-sizing(border-box);
   }
   $mqsizing:mqSizing("md");
@@ -68,6 +67,7 @@
 
 .layout_sidebar_contents {
   & > .sidebar {
+    padding-right:40px;
     @include order(0);
   }
   & > .contents {
@@ -77,6 +77,7 @@
 
 .layout_contents_sidebar {
   & > .sidebar {
+    padding-left:40px;
     @include order(1);
   }
   & > .contents {
