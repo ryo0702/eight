@@ -14,6 +14,22 @@
     }
   }
 
+  function billboard_animation_fade(){
+    // Setting
+    $(".billboard-animation-fade .billboard-bgi").eq(0).show();
+
+    var set_img = '.billboard-animation-fade';
+    var fadeSpeed = 800;
+    var switchDelay = 5500;
+
+    $(set_img).children('.billboard-bgi').css({opacity:'0'});
+    $(set_img).children('.billboard-bgi:first').css({opacity:'1'});
+
+    setInterval(function(){
+        $(set_img + ' .billboard-bgi:first').animate({opacity:'0'},fadeSpeed).next('.billboard-bgi').animate({opacity:'1'},fadeSpeed).end().appendTo(set_img);
+    },switchDelay);
+  }
+
   function dropdown_menu(){
     function menu_down(ul_elem){
       $(ul_elem).slideDown(100);
@@ -91,5 +107,6 @@
     main_margin_fixnavbar();
     billboard_subtract_fixnavbar();
     dropdown_menu();
+    billboard_animation_fade();
   };
 })(jQuery);

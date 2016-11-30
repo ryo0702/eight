@@ -1,0 +1,57 @@
+img.image {
+  width:100%;
+  height:auto;
+}
+
+.subvisual {
+  @include display-flex();
+  @include flex-direction(row);
+  @include flex-wrap(nowrap);
+  @include justify-content(space-between);
+  & > div {
+    width:33.3333333333333333%;
+    & > a {
+      display: block;
+    }
+    h3 {
+      margin:13px 0 0 0;
+      padding:0;
+      font-size:18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    img {width:100%;}
+    &:hover {
+      img {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &.subvisual-image-round {
+    img {
+      @include border-radius(50%);
+    }
+  }
+
+  &.subvisual-margin {
+    & > div {
+      width:30%;
+    }
+  }
+
+  // Media query
+  &,&.subvisual-margin {
+    $mqsizing:mqSizing("md");
+    @media screen and (max-width:$mqsizing) {
+      display: block;
+      & > div {
+        width:100%;
+        margin-bottom:25px;
+        &:last-child {
+          margin-bottom:0;
+        }
+      }
+    }
+  }
+}

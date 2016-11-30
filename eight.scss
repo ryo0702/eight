@@ -4,7 +4,7 @@
 /*!
 * Eight
 * License: The MIT License
-* Version: 0.1.23
+* Version: 0.1.3
 * License URI: https://opensource.org/licenses/mit-license.php
 */
 
@@ -24,6 +24,7 @@
 @import "scss/nav";
 @import "scss/footer";
 @import "scss/billboard";
+@import "scss/splitboard";
 @import "scss/text";
 @import "scss/button";
 @import "scss/archive";
@@ -34,9 +35,23 @@
 @import "scss/card";
 @import "scss/table";
 @import "scss/atta";
+@import "scss/image";
 @import "scss/dropdown";
 @import "scss/animation";
 @import "scss/other";
 
 
 @import "scss/color";
+
+
+.panel-grid {
+  width:100%;
+  padding:0!important;
+  margin:0!important;
+  @include box-sizing(border-box);
+}
+.panel-grid-cell {
+  width:100%;
+  padding:0!important;
+  margin:0!important;
+}

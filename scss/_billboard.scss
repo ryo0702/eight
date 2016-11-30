@@ -1,23 +1,50 @@
 .billboard {
   width:100%;
   height:auto;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  &.billboard-vertical-center,&.billboard-vertical-bottom,&.billboard-vertical-top,&.billboard-horizontal-left,&.billboard-horizontal-center,&.billboard-horizontal-right {
+  position: relative;
+  @include box-sizing(border-box);
+
+  .content {
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 9;
+    position: absolute;
     @include display-flex();
     @include flex-direction(column);
+    @include align-items(center);
+    @include align-content(center);
+    @include justify-content(center);
   }
-  &.billboard-vertical-center {@include align-items(center);}
-  &.billboard-vertical-bottom {@include align-items(flex-end);}
-  &.billboard-vertical-top {@include align-items(flex-start);}
-  &.billboard-horizontal-left {text-align: left;}
-  &.billboard-horizontal-center {text-align: center;}
-  &.billboard-horizontal-right {text-align: right;}
-  & > .billboard-content {
-    @include box-sizing(border-box);
+
+  .billboard-overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:5;
+    height:100%;
+    width:100%;
+    &.billboard-overlay-black {
+      background-color: rgba(#000,0.5);
+    }
+    &.billboard-overlay-black-light {
+      background-color: rgba(#000,0.25);
+    }
   }
-  & > .billboard-bgi {
+
+  .billboard-bgi {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    height:100%;
+    width:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .billboard-bgi-center {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,4 +71,8 @@
 .billboard-small{
   padding-top:20px;
   padding-bottom:20px;
+}
+
+.billboard-bgc-none {
+  background-color:transparent!important;
 }

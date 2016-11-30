@@ -27,6 +27,19 @@ h6 {
   font-size:17px;
 }
 
+.texts {
+  h1,h2,h3,h4 {
+    font-size:30px;
+    margin-bottom:15px;
+  }
+  p {
+    margin-bottom:15px;
+    &:last-child {
+      margin-bottom:0;
+    }
+  }
+}
+
 .textshadow{
   @include text-shadow(0 1px 1px rgba(#000,0.1));
 }
@@ -35,33 +48,39 @@ h6 {
 }
 
 
+.titleset {
+  &.titleset-center {& > .title,& > .lead {text-align: center;}}
+  &.titleset-left {& > .title,& > .lead {text-align: left;}}
+  &.titleset-right {& > .title,& > .lead {text-align: right;}}
+}
 .titleset-shortline {
+  @include display-flex();
+  @include flex-direction(column);
   & > .title {
+    font-size:32px;
+    text-align: center;
+    margin:0;
+    padding:0;
     &:after {
       display: block;
-      margin:30px auto 30px auto;
+      margin:24px auto 24px auto;
       content:"";
       width:80px;
       height:1px;
       background-color:rgba(#000,0.35);
     }
   }
-  & > .lead {}
-
-  &.titleset-shortline-center {
-    & > .title {&:after {margin:30px auto 30px auto;}}
+  & > .lead {
+    font-size:12px;
+    text-align: center;
   }
-  &.titleset-shortline-left {
-    & > .title {&:after {margin:30px 0 30px 0;}}
+  &.titleset-center {
+    & > .title {&:after {margin:24px auto 24px auto;}}
   }
-  &.titleset-shortline-right {
-    & > .title {&:after {margin:30px 0 30px 0;}}
+  &.titleset-left {
+    & > .title {&:after {margin:24px 0 24px 0;}}
   }
-
-  &.titleset-shortline-white {
-    & > .title {&:after {background-color:#FFF;}}
-  }
-  &.titleset-shortline-black {
-    & > .title {&:after {background-color:#000;}}
+  &.titleset-right {
+    & > .title {&:after {margin:24px 0 24px 0;}}
   }
 }
