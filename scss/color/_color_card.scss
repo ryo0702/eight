@@ -19,71 +19,32 @@
     border:solid map-get($color_common,border) 3px;
   }
 
-  // Color
-  &.card-default {
-    color:darken(map-get($color_default,bg),6.5%);
-    background-color:lighten(map-get($color_default,bg),30%);
-    border:solid darken(map-get($color_default,bg),6.5%) 1px;
-    & > .header {border-bottom:1px solid darken(map-get($color_default,bg),6.5%);}
-    & > .inner {&.inner-border {border-top:1px solid darken(map-get($color_default,bg),6.5%);}}
-    & > .footer {border-top:1px solid darken(map-get($color_default,bg),6.5%);}
-    &.card-strong {
-      border:solid darken(map-get($color_default,bg),10%) 3px;
+  @each $name, $color in $colors {
+    @if($name == "default"){
+      &,&.card-#{$name} {
+        color:darken(map-get($color,bg),6.5%);
+        background-color:lighten(map-get($color,bg),30%);
+        border:solid darken(map-get($color,bg),6.5%) 1px;
+        & > .header {border-bottom:1px solid darken(map-get($color,bg),6.5%);}
+        & > .inner {&.inner-border {border-top:1px solid darken(map-get($color,bg),6.5%);}}
+        & > .footer {border-top:1px solid darken(map-get($color,bg),6.5%);}
+        &.card-strong {
+          border:solid darken(map-get($color,bg),10%) 3px;
+        }
+      }
     }
-  }
-  &.card-primary {
-    color:darken(map-get($color_primary,bg),6.5%);
-    background-color:lighten(map-get($color_primary,bg),30%);
-    border:solid darken(map-get($color_primary,bg),6.5%) 1px;
-    & > .header {border-bottom:1px solid darken(map-get($color_primary,bg),6.5%);}
-    & > .inner {&.inner-border {border-top:1px solid darken(map-get($color_primary,bg),6.5%);}}
-    & > .footer {border-top:1px solid darken(map-get($color_primary,bg),6.5%);}
-    &.card-strong {
-      border:solid darken(map-get($color_primary,bg),10%) 3px;
-    }
-  }
-  &.card-success {
-    color:darken(map-get($color_success,bg),6.5%);
-    background-color:lighten(map-get($color_success,bg),30%);
-    border:solid darken(map-get($color_success,bg),6.5%) 1px;
-    & > .header {border-bottom:1px solid darken(map-get($color_success,bg),6.5%);}
-    & > .inner {&.inner-border {border-top:1px solid darken(map-get($color_success,bg),6.5%);}}
-    & > .footer {border-top:1px solid darken(map-get($color_success,bg),6.5%);}
-    &.card-strong {
-      border:solid darken(map-get($color_success,bg),10%) 3px;
-    }
-  }
-  &.card-info {
-    color:darken(map-get($color_info,bg),6.5%);
-    background-color:lighten(map-get($color_info,bg),30%);
-    border:solid darken(map-get($color_info,bg),6.5%) 1px;
-    & > .header {border-bottom:1px solid darken(map-get($color_info,bg),6.5%);}
-    & > .inner {&.inner-border {border-top:1px solid darken(map-get($color_info,bg),6.5%);}}
-    & > .footer {border-top:1px solid darken(map-get($color_info,bg),6.5%);}
-    &.card-strong {
-      border:solid darken(map-get($color_info,bg),10%) 3px;
-    }
-  }
-  &.card-warning {
-    color:darken(map-get($color_warning,bg),6.5%);
-    background-color:lighten(map-get($color_warning,bg),30%);
-    border:solid darken(map-get($color_warning,bg),6.5%) 1px;
-    & > .header {border-bottom:1px solid darken(map-get($color_warning,bg),6.5%);}
-    & > .inner {&.inner-border {border-top:1px solid darken(map-get($color_warning,bg),6.5%);}}
-    & > .footer {border-top:1px solid darken(map-get($color_warning,bg),6.5%);}
-    &.card-strong {
-      border:solid darken(map-get($color_warning,bg),10%) 3px;
-    }
-  }
-  &.card-danger {
-    color:darken(map-get($color_danger,bg),6.5%);
-    background-color:lighten(map-get($color_danger,bg),30%);
-    border:solid darken(map-get($color_danger,bg),6.5%) 1px;
-    & > .header {border-bottom:1px solid darken(map-get($color_danger,bg),6.5%);}
-    & > .inner {&.inner-border {border-top:1px solid darken(map-get($color_danger,bg),6.5%);}}
-    & > .footer {border-top:1px solid darken(map-get($color_danger,bg),6.5%);}
-    &.card-strong {
-      border:solid darken(map-get($color_danger,bg),10%) 3px;
+    @else{
+      &.card-#{$name} {
+        color:darken(map-get($color,bg),6.5%);
+        background-color:lighten(map-get($color,bg),30%);
+        border:solid darken(map-get($color,bg),6.5%) 1px;
+        & > .header {border-bottom:1px solid darken(map-get($color,bg),6.5%);}
+        & > .inner {&.inner-border {border-top:1px solid darken(map-get($color,bg),6.5%);}}
+        & > .footer {border-top:1px solid darken(map-get($color,bg),6.5%);}
+        &.card-strong {
+          border:solid darken(map-get($color,bg),10%) 3px;
+        }
+      }
     }
   }
 

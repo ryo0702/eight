@@ -16,3 +16,42 @@
  	@return 33em;
  }
 }
+
+
+@mixin btn($color){
+	color:map-get($color,font);
+	background-color:map-get($color,bg);
+	&:hover {
+		background-color:map-get($color,bg_hover);
+	}
+	&:active {
+		background-color:map-get($color,bg_active);
+	}
+	&:disabled,&.disabled {
+		color:rgba(map-get($color,font),0.5);
+		background-color:desaturate(map-get($color,bg),35%);
+	}
+}
+
+
+@mixin btn-ghost($color){
+	$darkness:map-get($color,darkness);
+	$color_ghost:map-get($color,bg);
+	$color_ghost_hover:map-get($color,bg_hover);
+	$color_ghost_active:map-get($color,bg_active);
+	color:$color_ghost;
+	background-color:transparent;
+	@include box-shadow(0 0 0 1px rgba($color_ghost,1)inset);
+	&:hover {
+		color:$color_ghost_hover;
+		@include box-shadow(0 0 0 1px rgba($color_ghost_hover,1)inset);
+	}
+	&:active {
+		color:$color_ghost_active;
+		@include box-shadow(0 0 0 1px rgba($color_ghost_active,1)inset);
+	}
+	&:disabled,&.disabled {
+		color:$color_ghost;
+		@include box-shadow(0 0 0 1px rgba($color_ghost,1)inset);
+	}
+}

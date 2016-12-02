@@ -1,28 +1,17 @@
-// Billboard or  Splitboard
 .billboard,.splitboard {
-  &,&.billboard-default,&.splitboard-default {
-    color:map-get($color_default,font);
-    background-color:map-get($color_default,bg);
-  }
-  &.billboard-primary,&.splitboard-primary {
-    color:map-get($color_primary,font);
-    background-color:map-get($color_primary,bg);
-  }
-  &.billboard-success,&.splitboard-success {
-    color:map-get($color_success,font);
-    background-color:map-get($color_success,bg);
-  }
-  &.billboard-info,&.splitboard-info {
-    color:map-get($color_info,font);
-    background-color:map-get($color_info,bg);
-  }
-  &.billboard-warning,&.splitboard-warning {
-    color:map-get($color_warning,font);
-    background-color:map-get($color_warning,bg);
-  }
-  &.billboard-danger,&.splitboard-danger {
-    color:map-get($color_danger,font);
-    background-color:map-get($color_danger,bg);
+  @each $name, $color in $colors {
+    @if($name == "default"){
+      &,&.billboard-#{$name},&.splitboard-#{$name} {
+        color:map-get($color,font);
+        background-color:map-get($color,bg);
+      }
+    }
+    @else{
+      &.billboard-#{$name},&.splitboard-#{$name} {
+        color:map-get($color,font);
+        background-color:map-get($color,bg);
+      }
+    }
   }
   &.billboard-animation-fade {
     color:#FFF;

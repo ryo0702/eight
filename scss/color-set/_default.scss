@@ -1,3 +1,4 @@
+// UI Color
 $color_common:(
   font:#4f4f4f,
   bg:#f7f7f7,
@@ -15,51 +16,75 @@ $color_navbar:(
   bg:#fefefe,
   border:#ececec
 );
-$color_default:(
+
+$color_overlay:(
   font:#4f4f4f,
-  font_hover:#4f4f4f,
-  bg:#f7f7f7,
-  bg_hover:#ffffff,
-  bg_active:#f4f4f4,
-  darkness:"thin"
+  bg:rgba(#f7f7f7,0.9)
 );
-$color_primary:(
-  font:#ffffff,
-  font_hover:#ffffff,
-  bg:#1b86f5,
-  bg_hover:#3095fe,
-  bg_active:#3095fe,
-  darkness:"thin"
-);
-$color_success:(
-  font:#ffffff,
-  font_hover:#ffffff,
-  bg:#14e74f,
-  bg_hover:#30fb69,
-  bg_active:#11d648,
-  darkness:"dark"
-);
-$color_info:(
-  font:#ffffff,
-  font_hover:#ffffff,
-  bg:#1494e7,
-  bg_hover:#2dacff,
-  bg_active:#0f88d6,
-  darkness:"dark"
-);
-$color_warning:(
-  font:#ffffff,
-  font_hover:#ffffff,
-  bg:#e79f14,
-  bg_hover:#faae1b,
-  bg_active:#de9811,
-  darkness:"dark"
-);
-$color_danger:(
-  font:#ffffff,
-  font_hover:#ffffff,
-  bg:#e7143a,
-  bg_hover:#fa1a43,
-  bg_active:#da0f34,
-  darkness:"dark"
+
+$colors:(
+  default:(
+    font:#4f4f4f,
+    font_hover:#4f4f4f,
+    bg:#f7f7f7,
+    bg_hover:#ffffff,
+    bg_active:#f4f4f4,
+    darkness:"thin"
+  ),
+  primary:(
+    font:#ffffff,
+    font_hover:#ffffff,
+    bg:#1b86f5,
+    bg_hover:#3095fe,
+    bg_active:#3095fe,
+    darkness:"thin"
+  ),
+  success:(
+    font:#ffffff,
+    font_hover:#ffffff,
+    bg:#14e74f,
+    bg_hover:#30fb69,
+    bg_active:#11d648,
+    darkness:"dark"
+  ),
+  info:(
+    font:#ffffff,
+    font_hover:#ffffff,
+    bg:#1494e7,
+    bg_hover:#2dacff,
+    bg_active:#0f88d6,
+    darkness:"dark"
+  ),
+  warning:(
+    font:#ffffff,
+    font_hover:#ffffff,
+    bg:#e79f14,
+    bg_hover:#faae1b,
+    bg_active:#de9811,
+    darkness:"dark"
+  ),
+  danger:(
+    font:#ffffff,
+    font_hover:#ffffff,
+    bg:#e7143a,
+    bg_hover:#fa1a43,
+    bg_active:#da0f34,
+    darkness:"dark"
+  ),
+  dark:(
+    font:#e3e3e3,
+    font_hover:#eeecec,
+    bg:#333333,
+    bg_hover:#4b4b4b,
+    bg_active:#333333,
+    darkness:"dark"
+  ),
+  light:(
+    font:#333333,
+    font_hover:#4b4b4b,
+    bg:#fcfcfc,
+    bg_hover:#fffcfc,
+    bg_active:#fffcfc,
+    darkness:"dark"
+  )
 );

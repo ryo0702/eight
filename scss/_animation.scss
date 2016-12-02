@@ -36,3 +36,32 @@
     background-position-y: top;
   }
 }
+
+.animation-billboard-content-fadein {
+  .content {
+    h2 {
+      opacity: 1;
+      @include animation-name(animation_billboard_content_fadein_h2);
+    	@include animation-duration(1.8s);
+    	@include animation-timing-function(ease);
+    	@include animation-iteration-count(1);
+      @include keyframes(animation_billboard_content_fadein_h2) {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+    }
+    p {
+      opacity: 1;
+      @include animation-name(animation_billboard_content_fadein_p);
+    	@include animation-duration(3.6s);
+    	@include animation-timing-function(ease);
+    	@include animation-iteration-count(1);
+      @include keyframes(animation_billboard_content_fadein_p) {
+        0% {opacity: 0;}
+        39% {opacity: 0;}
+        40% {opacity: 0.1}
+        100% {opacity: 1;}
+      }
+    }
+  }
+}

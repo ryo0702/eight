@@ -1,3 +1,5 @@
+$color_default:map-get($colors,"default");
+
 .footer {
 }
 
@@ -84,4 +86,10 @@
       color:darken(map-get($color_common,bg),6%);
     }
   }
+}
+
+
+.overlay,.loader {
+  color:map-get($color_overlay,bg);
+  background-color:map-get($color_overlay,bg);
 }

@@ -1,4 +1,7 @@
 // Form
+$color_danger:map-get($colors,"danger");
+$color_success:map-get($colors,"success");
+
 input[type="text"],input[type="number"],input[type="email"],input[type="password"]{
   border:solid 1px map-get($color_common,border);
   color:map-get($color_common,font);

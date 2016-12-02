@@ -9,7 +9,6 @@ img.image {
   @include flex-wrap(nowrap);
   @include justify-content(space-between);
   & > div {
-    width:33.3333333333333333%;
     & > a {
       display: block;
     }
@@ -27,16 +26,34 @@ img.image {
       }
     }
   }
+  &,&.subvisual-3column {
+    & > div {width:33.3333333333333333%;}
+    &.subvisual-margin {
+      & > div {width:30%;}
+    }
+  }
+  &.subvisual-2column {
+    & > div {width:50%;}
+    &.subvisual-margin {
+      & > div {width:48%;}
+    }
+  }
+  &.subvisual-4column {
+    & > div {width:25%;}
+    &.subvisual-margin {
+      & > div {width:24%;}
+    }
+  }
+  &.subvisual-5column {
+    & > div {width:20%;}
+    &.subvisual-margin {
+      & > div {width:19%;}
+    }
+  }
 
   &.subvisual-image-round {
     img {
       @include border-radius(50%);
-    }
-  }
-
-  &.subvisual-margin {
-    & > div {
-      width:30%;
     }
   }
 
